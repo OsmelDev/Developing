@@ -1,0 +1,101 @@
+.sidebar {
+  grid-area: sidebar;
+  /* grid-row-start: 3;
+  grid-row-end: 8; */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+
+.content_box {
+  height: 100%;
+  width: 5600px;
+  display: flex;
+  align-items: center;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+.card {
+  width: 1400px;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+
+  /* animacion */
+  /* view-timeline-name:--card;
+view-timeline-axis: block;
+
+animation-timeline:--card ;
+animation-name: show;
+
+animation-range: entry 25% cover 30%;
+animation-fill-mode: both; */
+  /* todavia en prueba */
+
+  p {
+    text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
+      0px -1px 0px black;
+    font-size: 70px;
+    font-weight: 600;
+    color: #ffffffa1;
+  }
+}
+
+.action_btns {
+  width: 98vw;
+  height: 190px;
+  display: flex;
+  position: absolute;
+  top: 85px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+.action_btns button {
+  width: 60px;
+  height: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  color: #002d36;
+  background: #0497b400;
+
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  svg {
+    height: 100%;
+  }
+}
+
+.leftbtn:hover {
+  border-radius: 10px 0 0 10px;
+  color: #162124;
+  border: 1px solid aliceblue;
+}
+.rightbtn:hover {
+  border-radius: 0 10px 10px 0;
+  color: #162124;
+  border: 1px solid aliceblue;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+

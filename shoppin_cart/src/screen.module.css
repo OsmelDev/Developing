@@ -1,0 +1,20 @@
+.screen {
+  min-height: 100vh;
+  /* width: 100vw; */
+  grid-area: screen;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  z-index: 2;
+  background: rgba(236, 233, 233, 0);
+  /* overflow: scroll; */
+  /* scrollBehavior: "smooth"; */
+}
+.containerProducts {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  img {
+    width: 45%;
+    height: 35%;
+  }
+}
