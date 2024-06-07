@@ -1,41 +1,23 @@
-export const cartInitialState = [];
+import { useReducer } from "react";
+import { cartInitialState, cartReducer  } from "./cart";
+//empieza el reducer
+export function useCartReducer() {
+  const [state, dispatch] = useReducer(cartReducer, cartInitialState);
 
-export const cartReducer = (state, action) => {
-  const { type: actionType, payload: actionPayload } = action;
+  const addToCart = (localProduct) =>
+    dispatch({
+      type: "ADD_TO_CART",
+      payload: localProduct,
+    });
 
-  switch (actionType) {
-    case "ADD_TO_CART": {
-      const { id } = actionPayload;
-      const productInCartIndex = state.findIndex((item) => item.id === id);
+  const removeFromCart = (localProduct) =>
+    dispatch({
+      type: "REMOVE_FROM_CART",
+      payload: localProduct,
+    });
 
-      if (productInCartIndex >= 0) {
-        //usando structuredClone
-        const newState = structuredClone(state);
-        newState[productInCartIndex].quantity += 1;
-        return newState;
-      }
+  const clearCart = () => dispatch({ type: "CLEAR_CART" });
 
-      return [
-        ...state,
-        {
-          ...actionPayload,
-          quantity: 1,
-        },
-      ];
-    }
-
-    case "REMOVE_FROM_CART": {
-      const { id } = actionPayload;
-      return state.filter((item) => item.id != id);
-    }
-  
-    case "CLEAR_CART": {
-      return cartInitialState;
-    }
-    case "SEARCH":{
-      const searchInput = actionPayload
-      return state.filter((item)=> item.title == searchInput)
-    }
-  }
-  return state;
-};
+  return { state, addToCart, removeFromCart, clearCart,  dispatch };
+}
+//termina el reducer

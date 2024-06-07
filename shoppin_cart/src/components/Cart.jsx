@@ -1,12 +1,12 @@
 import React, { useContext, useId } from "react";
 import { LiaOpencart, LiaCartArrowDownSolid } from "react-icons/lia";
 import style from "./styles/cart.module.css";
-import { useCart } from "../hooks/useCart";
 import { CartIten } from "./components/CartIten";
+import { useCartReducer } from "../reducer/cartReducer";
 
 const Cart = () => {
   const cartCheckboxId = useId();
-  const { state, addToCart, clearCart } = useCart();
+  const {state, addToCart, clearCart} = useCartReducer()
   return (
     <>
       <label htmlFor={cartCheckboxId} className={style.cart_button}>
