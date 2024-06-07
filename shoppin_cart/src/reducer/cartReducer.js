@@ -1,6 +1,6 @@
 import { useReducer } from "react";
-import { cartInitialState, cartReducer  } from "./cart";
-//empieza el reducer
+import { cartInitialState, cartReducer } from "./cart";
+
 export function useCartReducer() {
   const [state, dispatch] = useReducer(cartReducer, cartInitialState);
 
@@ -17,7 +17,6 @@ export function useCartReducer() {
     });
 
   const clearCart = () => dispatch({ type: "CLEAR_CART" });
-
-  return { state, addToCart, removeFromCart, clearCart,  dispatch };
+console.log(state)
+  return { addToCart, removeFromCart, clearCart, dispatch, state };
 }
-//termina el reducer

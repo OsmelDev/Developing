@@ -1,5 +1,6 @@
 
-export function CartIten({image, price, title, quantity, addToCart, id}) {
+export function CartIten({image, price, title, quantity, addToCart,  id}) {
+  console.log(title)
   return (
     <li key={id}>
       <img

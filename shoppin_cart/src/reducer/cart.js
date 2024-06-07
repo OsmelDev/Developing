@@ -9,11 +9,11 @@ export const cartReducer = (state, action) => {
       const productInCartIndex = state.findIndex((item) => item.id === id);
 
       if (productInCartIndex >= 0) {
-        //usando structuredClone
         const newState = structuredClone(state);
         newState[productInCartIndex].quantity += 1;
         return newState;
       }
+      
 
       return [
         ...state,
@@ -26,12 +26,13 @@ export const cartReducer = (state, action) => {
 
     case "REMOVE_FROM_CART": {
       const { id } = actionPayload;
+      console.log('remove')
       return state.filter((item) => item.id != id);
     }
-  
+
     case "CLEAR_CART": {
       return cartInitialState;
     }
   }
   return state;
-}; 
+};

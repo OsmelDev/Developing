@@ -1,32 +1,10 @@
-import { createContext, useReducer } from "react";
-import { cartInitialState, cartReducer } from "../reducer/cart";
+import { createContext } from "react";
+import {useCartReducer} from '../reducer/cartReducer'
 
 export const CartContext = createContext();
 
-//empieza el reducer
-export function useCartReducer() {
-  const [state, dispatch] = useReducer(cartReducer, cartInitialState);
-
-  const addToCart = (localProduct) =>
-    dispatch({
-      type: "ADD_TO_CART",
-      payload: localProduct,
-    });
-
-  const removeFromCart = (localProduct) =>
-    dispatch({
-      type: "REMOVE_FROM_CART",
-      payload: localProduct,
-    });
-
-  const clearCart = () => dispatch({ type: "CLEAR_CART" });
-
-  return { state, addToCart, removeFromCart, clearCart,  dispatch };
-}
-//termina el reducer
-
 export function CartProvider({ children }) {
-  const { state, addToCart, removeFromCart, clearCart,  dispatch } = useCartReducer();
+  const { state,  addToCart, removeFromCart, clearCart,  dispatch } = useCartReducer();
 
   return (
     <CartContext.Provider
@@ -35,7 +13,6 @@ export function CartProvider({ children }) {
         addToCart,
         removeFromCart,
         clearCart,
-        
         dispatch
       }}
     >
