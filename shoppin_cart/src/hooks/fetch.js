@@ -12,22 +12,11 @@ export const loadProduct = () => {
       .then((data) => setData(data))
       .finally(() => setLoading(false));
   });
-
   const localProducts = product;
-
-  const [categories, setCategories] = useState([]);
-  const loadCategories = useCallback(async () => {
-    await fetch(API_URL_CATEGORIES)
-      .then((res) => res.json())
-      .then((data) => setCategories(data))
-      .finally(() => setLoading(false));
-  });
-
   useEffect(() => {
     setLoading(true);
     loadData();
-    loadCategories();
   }, []);
 
-  return { data, localProducts, loading, categories };
+  return { data, localProducts, loading };
 };
