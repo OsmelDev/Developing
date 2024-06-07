@@ -1,0 +1,118 @@
+.homeContainer {
+  max-width: 100%;
+  height: 500px;
+  /* border: 1px solid; */
+  padding-left: 10%;
+  padding-right: 15%;
+  padding-top: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.infoContainer {
+  margin-left: 3%;
+  width: 60%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed {
+  /* border: 1px solid; */
+  /* margin-left: px; */
+  width: 10%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.iconsFeed {
+  height: 30px;
+  width: 30px;
+  transition: 0.2s;
+}
+.iconsFeed:hover {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /* border: 1px solid; */
+  align-items: flex-start;
+}
+
+.homeContent button {
+  height: 50px;
+  width: 120px;
+  margin-left: 20px;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  color: #b4acac;
+  background-color: #0e0d0d;
+  transition: 0.5s;
+}
+
+.button:hover {
+  color: #0e0d0d;
+  background-color: hsl(0, 4%, 57%);
+  cursor: pointer;
+}
+.homeContent h1 {
+  height: 100px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title h1 p{
+  margin-left: 25px;
+}
+.line {
+  border: 1px solid;
+  width: 80px;
+  height: 0;
+}
+.name {
+  font-size: 2.5em;
+}
+.icon {
+  color: rgb(255, 255, 2);
+  margin-left: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+.img{
+  background: url(../assets/avatar.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px rgba(238, 237, 237, 0.389);
+  order: 1;
+  justify-self: center;
+  height: 300px;
+  width: 300px;
+  animation: profile__animate 8s ease-in-out infinite 1ms;
+}
+/* Animacion del contenedor de la imagen */
+@keyframes profile__animate{
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60% ;
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+  }
+}
