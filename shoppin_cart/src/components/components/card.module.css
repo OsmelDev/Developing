@@ -1,6 +1,5 @@
-.card{
+.card {
   padding: 10px;
-  /* border: 1px solid; */
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -9,14 +8,14 @@
   width: 280px;
   height: 350px;
   background-color: rgb(253, 254, 255);
-  a{
+  a {
     font-weight: 300;
     font-size: 15px;
   }
-  .contentBtn{
+  .contentBtn {
     width: 50px;
   }
-  .btn{
+  .btn {
     display: flex;
     align-content: center;
     width: 100%;
@@ -24,7 +23,5 @@
     border: none;
     border-radius: 10px;
     justify-content: center;
-
-    
-  } 
+  }
 }

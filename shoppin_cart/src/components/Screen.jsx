@@ -1,7 +1,7 @@
-import React from "react";
-import style from "./styles/screen.module.css";
-import { useResult } from "../hooks/useResult";
-import { loadProduct } from "../hooks/fetch";
+import React from 'react';
+import style from './styles/screen.module.css';
+import { useResult } from '../hooks/useResult';
+import { loadProduct } from '../hooks/fetch';
 
 const Screen = () => {
   const { getLocalResult } = useResult();

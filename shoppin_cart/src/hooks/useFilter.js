@@ -1,7 +1,7 @@
-import { useContext } from "react";
-import { FilterContext } from "../context/filterContext";
-import { useResult } from "./useResult";
-import { loadProduct } from "./fetch";
+import { useContext } from 'react';
+import { FilterContext } from '../context/filterContext';
+import { useResult } from './useResult';
+import { loadProduct } from './fetch';
 
 export function useFilter() {
   const { filter, setFilter } = useContext(FilterContext);
@@ -9,14 +9,14 @@ export function useFilter() {
 
   const filterProducts = () => {
     return data.filter((d) => {
-      return (filter.category === "all" && d.category === filter.category);
+      return filter.category === 'all' && d.category === filter.category;
     });
   };
 
   const filterProductsLocal = () => {
     const data = localProducts;
     return data.filter((d) => {
-      return filter.category === "all" || d.category === filter.category;
+      return filter.category === 'all' || d.category === filter.category;
     });
   };
   return { filterProducts, filterProductsLocal, filter, setFilter };

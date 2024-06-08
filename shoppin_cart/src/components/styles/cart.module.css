@@ -19,12 +19,10 @@
   flex-direction: column;
   gap: 10px;
 }
-
 .cart img {
   aspect-ratio: 16/9;
   width: 100%;
 }
-
 .cart li {
   border-bottom: 1px solid #444;
   padding-bottom: 16px;
@@ -38,14 +36,12 @@
   width: 60%;
   padding: 5px;
 }
-
 .cart footer {
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
 }
-
 .cart footer button {
   border: none;
   height: 20px;
@@ -57,7 +53,6 @@
 .cart footer button:hover {
   scale: 1.1;
 }
-
 .cart footer small {
   font-size: 15px;
   font-weight: 500;
@@ -65,7 +60,6 @@
 .cart_button {
   align-items: center;
   background: rgb(0, 0, 0);
-  /* border-radius: 9999px; */
   cursor: pointer;
   display: flex;
   height: 45px;
@@ -73,24 +67,21 @@
   justify-content: center;
   gap: 5px;
   padding: 4px;
-  /* position: fixed; */
   right: 8px;
   top: 8px;
   transition: all 0.3s ease;
   z-index: 9999;
   color: aliceblue;
-  svg{
+  svg {
     background-color: #0a0a0b;
     border: none;
     height: 100%;
-  width: 100%;
+    width: 100%;
   }
 }
-
 .cart_button:hover {
   scale: 1.1;
 }
-
 #cleanButton {
   margin: 85px;
   bottom: 0;
@@ -99,18 +90,16 @@
   border: none;
   background-color: #ced4db;
   width: 40px;
-  /* height: 40px; */
   border-radius: 50px;
   transition: all 0.3s ease;
   cursor: pointer;
-  svg{
+  svg {
     height: 100%;
     width: 100%;
   }
-
 }
 #cleanButton:hover {
-  background-color:#e97a20;
+  background-color: #e97a20;
   color: #1a1a1a;
   scale: 1.1;
 }

@@ -1,13 +1,13 @@
-import React, { useId, useState, useContext } from "react";
-import style from "./styles/header.module.css";
-import { IoSearchSharp } from "react-icons/io5";
-import { IMG_URL, IMG_URL_Local } from "../assets/constant";
-import { GrLocation } from "react-icons/gr";
-import Cart from "./Cart";
-import { FilterContext } from "../context/filterContext";
+import React, { useId, useState, useContext } from 'react';
+import style from './styles/header.module.css';
+import { IoSearchSharp } from 'react-icons/io5';
+import { IMG_URL, IMG_URL_Local } from '../assets/constant';
+import { GrLocation } from 'react-icons/gr';
+import Cart from './Cart';
+import { FilterContext } from '../context/filterContext';
 
 const Header = () => {
-  const [searchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState('');
   const { filter, setFilter } = useContext(FilterContext);
 
   const hadleChangeCategory = (event) => {
@@ -22,11 +22,11 @@ const Header = () => {
   return (
     <div className={style.header}>
       <div className={style.logo}>
-        <img src={IMG_URL || IMG_URL_Local} alt="" />
+        <img src={IMG_URL || IMG_URL_Local} alt='' />
       </div>
 
       <span className={style.ubication}>
-        Deliver to{" "}
+        Deliver to{' '}
         <p>
           <GrLocation />
           Cuba
@@ -35,16 +35,19 @@ const Header = () => {
 
       <div className={style.search}>
         <div className={style.filter}>
-          <select name="" id={categoryFilterId} onChange={hadleChangeCategory}>
-            <option value="all">All</option>
-            <option value="electronics">Electronics</option>
-            <option value="jewelery">Jewelery</option>
+          <select name='' id={categoryFilterId} onChange={hadleChangeCategory}>
+            <option value='all'>All</option>
+            <option value='electronics'>Electronics</option>
+            <option value='jewelery'>Jewelery</option>
             <option value="men's clothing">Men's clothing</option>
             <option value="women's clothing">Women's clothing</option>
           </select>
         </div>
 
-        <input type="text" onChange={(input) => setSearchInput(input.target.value)} />
+        <input
+          type='text'
+          onChange={(input) => setSearchInput(input.target.value)}
+        />
         <IoSearchSharp />
       </div>
 

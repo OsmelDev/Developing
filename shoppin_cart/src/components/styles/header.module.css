@@ -10,7 +10,6 @@
   background: black;
   color: aliceblue;
 }
-
 .ubication{
     display: flex;
     flex-direction: column;
@@ -65,7 +64,6 @@ width: 13px;
   height: 50px;
   margin-right: 15px;
   display: relative;
-
 }
 .cart p{
   display: flex;

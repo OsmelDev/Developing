@@ -1,12 +1,7 @@
-
-export function CartIten({image, price, title, quantity, addToCart,  id}) {
-  console.log(title)
+export function CartIten({ image, price, title, quantity, addToCart, id }) {
   return (
     <li key={id}>
-      <img
-        src={image}
-        alt={title}
-      />
+      <img src={image} alt={title} />
       <div>
         <strong>{title}</strong> - ${price}
       </div>
@@ -17,4 +12,4 @@ export function CartIten({image, price, title, quantity, addToCart,  id}) {
       </footer>
     </li>
   );
-} 
+};

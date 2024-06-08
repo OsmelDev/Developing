@@ -1,7 +1,5 @@
 .sidebar {
   grid-area: sidebar;
-  /* grid-row-start: 3;
-  grid-row-end: 8; */
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -34,18 +32,6 @@
   justify-content: center;
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
-
-  /* animacion */
-  /* view-timeline-name:--card;
-view-timeline-axis: block;
-
-animation-timeline:--card ;
-animation-name: show;
-
-animation-range: entry 25% cover 30%;
-animation-fill-mode: both; */
-  /* todavia en prueba */
-
   p {
     text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black,
       0px -1px 0px black;
@@ -54,7 +40,6 @@ animation-fill-mode: both; */
     color: #ffffffa1;
   }
 }
-
 .action_btns {
   width: 98vw;
   height: 190px;
@@ -74,17 +59,14 @@ animation-fill-mode: both; */
   font-weight: 500;
   color: #002d36;
   background: #0497b400;
-
   padding: 10px 25px;
   border: none;
   cursor: pointer;
   transition: all 0.5s ease;
-
   svg {
     height: 100%;
   }
 }
-
 .leftbtn:hover {
   border-radius: 10px 0 0 10px;
   color: #162124;

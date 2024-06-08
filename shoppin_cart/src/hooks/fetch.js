@@ -1,6 +1,6 @@
-import { useCallback, useEffect, useState } from "react";
-import { API_URL, API_URL_CATEGORIES } from "../constant/constant";
-import { product } from "../assets/products.json";
+import { useCallback, useEffect, useState } from 'react';
+import { API_URL, API_URL_CATEGORIES } from '../constant/constant';
+import { product } from '../assets/products.json';
 
 export const loadProduct = () => {
   const [data, setData] = useState([]);

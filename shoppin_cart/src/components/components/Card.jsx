@@ -1,6 +1,6 @@
-import React from "react";
-import style from "./card.module.css";
-import { BsCartCheckFill, BsCartXFill } from "react-icons/bs";
+import React from 'react';
+import style from './card.module.css';
+import { BsCartCheckFill, BsCartXFill } from 'react-icons/bs';
 
 const Card = ({
   localproduct,
@@ -18,8 +18,16 @@ const Card = ({
       <p>{nombre}</p>
       <div className={style.contentBtn}>
         <button
-          style={{ backgroundColor: isProductInCart ? "rgb(233, 122, 32)" : "#807e7ecc" }}
-          onClick={() => (isProductInCart ? removeFromCart(localproduct) : addToCart(localproduct))}
+          style={{
+            backgroundColor: isProductInCart
+              ? 'rgb(233, 122, 32)'
+              : '#807e7ecc',
+          }}
+          onClick={() =>
+            isProductInCart
+              ? removeFromCart(localproduct)
+              : addToCart(localproduct)
+          }
           className={style.btn}
         >
           {isProductInCart ? <BsCartXFill /> : <BsCartCheckFill />}

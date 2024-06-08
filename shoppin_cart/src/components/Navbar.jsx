@@ -1,48 +1,48 @@
-import React from "react";
-import style from "./styles/navbar.module.css";
-import { IoMenu } from "react-icons/io5";
+import React from 'react';
+import style from './styles/navbar.module.css';
+import { IoMenu } from 'react-icons/io5';
 
 const Navbar = () => {
   const menu = [
     {
       id: 1,
-      name: "Medical Care",
+      name: 'Medical Care',
     },
     {
       id: 2,
-      name: "Best Seller",
+      name: 'Best Seller',
     },
     {
       id: 3,
-      name: "Amazon Basics",
+      name: 'Amazon Basics',
     },
     {
       id: 4,
-      name: "New Releases",
+      name: 'New Releases',
     },
     {
       id: 5,
-      name: "Music",
+      name: 'Music',
     },
     {
       id: 6,
-      name: "Prime",
+      name: 'Prime',
     },
     {
       id: 7,
-      name: "Customer Services",
+      name: 'Customer Services',
     },
     {
       id: 8,
-      name: "Today Deals",
+      name: 'Today Deals',
     },
     {
       id: 9,
-      name: "Whole Foods",
+      name: 'Whole Foods',
     },
     {
       id: 10,
-      name: "Amazon Home",
+      name: 'Amazon Home',
     },
   ];
   return (

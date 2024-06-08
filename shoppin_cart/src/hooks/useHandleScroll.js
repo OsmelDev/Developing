@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef } from 'react';
 
 export const useHandleScroll = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -12,7 +12,7 @@ export const useHandleScroll = () => {
     //setear el estado  con la posicion del nuevo scroll
     setScrollPosition(newScrollPosition);
 
-    if (newScrollPosition > "5500") {
+    if (newScrollPosition > '5500') {
       newScrollPosition = calc * 0;
       setScrollPosition(newScrollPosition);
     }

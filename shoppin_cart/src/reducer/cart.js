@@ -4,7 +4,7 @@ export const cartReducer = (state, action) => {
   const { type: actionType, payload: actionPayload } = action;
 
   switch (actionType) {
-    case "ADD_TO_CART": {
+    case 'ADD_TO_CART': {
       const { id } = actionPayload;
       const productInCartIndex = state.findIndex((item) => item.id === id);
       if (productInCartIndex >= 0) {
@@ -20,12 +20,12 @@ export const cartReducer = (state, action) => {
         },
       ];
     }
-    case "REMOVE_FROM_CART": {
+    case 'REMOVE_FROM_CART': {
       const { id } = actionPayload;
-      console.log('remove')
+      console.log('remove');
       return state.filter((item) => item.id != id);
     }
-    case "CLEAR_CART": {
+    case 'CLEAR_CART': {
       return cartInitialState;
     }
   }
