@@ -5,6 +5,7 @@ import { product } from '../assets/products.json';
 export const loadProduct = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [categories, setCategories] = useState([]);
 
   const loadData = useCallback(() => {
     fetch(API_URL)
@@ -13,10 +14,17 @@ export const loadProduct = () => {
       .finally(() => setLoading(false));
   });
   const localProducts = product;
+  const getCategories = useCallback(() => {
+    fetch(API_URL_CATEGORIES)
+      .then((res) => res.json())
+      .then((data) => setCategories(data))
+      .finally(()=>setLoading(false));
+  });
   useEffect(() => {
     setLoading(true);
     loadData();
+    getCategories();
   }, []);
 
-  return { data, localProducts, loading };
+  return { data,categories, localProducts, loading };
 };

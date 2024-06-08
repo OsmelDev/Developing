@@ -5,10 +5,13 @@ import { IMG_URL, IMG_URL_Local } from '../assets/constant';
 import { GrLocation } from 'react-icons/gr';
 import Cart from './Cart';
 import { FilterContext } from '../context/filterContext';
+import { loadProduct } from '../hooks/fetch';
+import { TiArrowSortedDown } from 'react-icons/ti';
 
 const Header = () => {
   const [searchInput, setSearchInput] = useState('');
   const { filter, setFilter } = useContext(FilterContext);
+  const { categories } = loadProduct();
 
   const hadleChangeCategory = (event) => {
     setFilter((prevState) => ({
@@ -33,24 +36,26 @@ const Header = () => {
         </p>
       </span>
 
-      <div className={style.search}>
+      <div className={style.containerFilterSearch}>
         <div className={style.filter}>
           <select name='' id={categoryFilterId} onChange={hadleChangeCategory}>
-            <option value='all'>All</option>
-            <option value='electronics'>Electronics</option>
-            <option value='jewelery'>Jewelery</option>
-            <option value="men's clothing">Men's clothing</option>
-            <option value="women's clothing">Women's clothing</option>
+            <option value='all'>All </option>
+            {categories.map((category, i) => (
+              <option key={i} value={category}>{category} </option>
+            ))}
           </select>
         </div>
 
-        <input
-          type='text'
-          onChange={(input) => setSearchInput(input.target.value)}
-        />
-        <IoSearchSharp />
+        <div className={style.searchContainer}>
+          <input
+            type='text'
+            onChange={(input) => setSearchInput(input.target.value)}
+          />
+          <button>
+            <IoSearchSharp />
+          </button>
+        </div>
       </div>
-
       <span>
         Hello, sign in <br />
         Acconunt & List
