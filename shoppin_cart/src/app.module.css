@@ -28,7 +28,7 @@
 @media (min-width: 1200px) {
   .app {
     grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: 70px 30px repeat(2, 250px) repeat(2, 1fr) 25px;
+    grid-template-rows: 60px 40px repeat(2, 250px) repeat(2, 1fr) 25px;
     grid-template-areas:
       'header header header'
       'navbar navbar navbar'

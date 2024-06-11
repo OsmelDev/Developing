@@ -11,14 +11,11 @@ import es from '../assets/images/es.svg';
 
 import { useTranslation } from 'react-i18next';
 
-
-
 const Header = () => {
-  const {t, i18n} = useTranslation("global");
+  const { t, i18n } = useTranslation('global');
   const [searchInput, setSearchInput] = useState('');
   const { filter, setFilter } = useContext(FilterContext);
   const { categories } = loadProduct();
-
 
   const hadleChangeCategory = (event) => {
     setFilter((prevState) => ({
@@ -36,7 +33,7 @@ const Header = () => {
       </div>
 
       <span className={style.ubication}>
-          {t('header.ubication')}
+        {t('header.ubication')}
         <p>
           <GrLocation />
           Cuba
@@ -46,11 +43,17 @@ const Header = () => {
       <div className={style.containerFilterSearch}>
         <div className={style.filter}>
           <select name='' id={categoryFilterId} onChange={hadleChangeCategory}>
-            <option value='all'>{t("header.categories.all")} </option>
-            <option value='electronics'>{t("header.categories.electronics")} </option>
-            <option value='jewelery'>{t("header.categories.jewelery")} </option>
-            <option value="men's clothing">{t("header.categories.clothing.men's")} </option>
-            <option value="women's clothing">{t("header.categories.clothing.women's")} </option>
+            <option value='all'>{t('header.categories.all')} </option>
+            <option value='electronics'>
+              {t('header.categories.electronics')}{' '}
+            </option>
+            <option value='jewelery'>{t('header.categories.jewelery')} </option>
+            <option value="men's clothing">
+              {t("header.categories.clothing.men's")}{' '}
+            </option>
+            <option value="women's clothing">
+              {t("header.categories.clothing.women's")}{' '}
+            </option>
 
             {/* {categories.map((category, i) => (
               <option key={i} value={category}>
@@ -73,22 +76,29 @@ const Header = () => {
 
       <div className={style.languajeSelectorContainer}>
         <div id={style.languajeSelector}>
-          <span className={style.languaje} onClick={()=> i18n.changeLanguage("es")}>
-            <img src={es}/> es{' '}
+          <span
+            className={style.languaje}
+            onClick={() => i18n.changeLanguage('es')}
+          >
+            <img src={es} /> es{' '}
           </span>
-          <span className={style.languaje} onClick={()=> i18n.changeLanguage("en")}>
-            <img src={en}/> en{' '}
+          <span
+            className={style.languaje}
+            onClick={() => i18n.changeLanguage('en')}
+          >
+            <img src={en} /> en{' '}
           </span>
         </div>
       </div>
-      <span>
-        {t("header.account.greeting")} <br />
-        {t("header.account.login")}
-      </span>
+      <div className={style.loginContainer}>
+        <p>{t('header.account.greeting')}</p>
+        <p>{t('header.account.login')}</p>
+      </div>
 
-      <span>
-      {t("header.orders.returns")} <br />{t("header.orders.orders")}
-      </span>
+      <div className={style.infoContainer}>
+        <p>{t('header.orders.returns')}</p>
+        <p>{t('header.orders.orders')}</p>
+      </div>
 
       <Cart />
     </div>
