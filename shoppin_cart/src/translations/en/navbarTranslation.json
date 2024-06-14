@@ -1,0 +1,17 @@
+{
+	"navbar": {
+		"menu": {
+			"medical": "Medical Care",
+			"best_seller": "Best_Seller",
+			"basics": "Amazon Basics",
+			"releases": "New Releases",
+			"music": "Music",
+			"prime": "Prime",
+			"services": "Customer Services",
+			"deals": "Today Deals",
+			"foods": "Whole Foods",
+			"home": "Amazon Home"
+
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"navbar": {
+		"menu": {
+			"medical": "Medical Care",
+			"best_seller": "Mejor Vendido",
+			"basics": "Basicos Amazon",
+			"releases": "Nuevos Lanzamientos",
+			"music": "Musica",
+			"prime": "Principal",
+			"services": "Servicios al Cliente",
+			"deals": "Ofertas de hoy",
+			"foods": "Alimentos Integrales",
+			"home": "Inicio Amazon"
+
+		}
+	}
+}

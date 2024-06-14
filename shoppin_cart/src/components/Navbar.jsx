@@ -2,49 +2,56 @@ import React from 'react';
 import style from './styles/navbar.module.css';
 import { IoMenu } from 'react-icons/io5';
 
+import { useTranslation } from 'react-i18next';
+
 const Navbar = () => {
+  const {t, i18n}=useTranslation("navbarTranslation")
+console.log(t('navbar.menu.medical'))
   const menu = [
     {
       id: 1,
-      name: 'Medical Care',
+      name:
+      `${t('navbar.menu.medical')}`,
+      
     },
     {
       id: 2,
-      name: 'Best Seller',
+      name: `${t('navbar.menu.best_seller')}`,
     },
     {
       id: 3,
-      name: 'Amazon Basics',
+      name: `${t('navbar.menu.basics')}`,
     },
     {
       id: 4,
-      name: 'New Releases',
+      name: `${t('navbar.menu.releases')}`,
     },
     {
       id: 5,
-      name: 'Music',
+      name: `${t('navbar.menu.music')}`,
     },
     {
       id: 6,
-      name: 'Prime',
+      name: `${t('navbar.menu.prime')}`,
     },
     {
       id: 7,
-      name: 'Customer Services',
+      name: `${t('navbar.menu.services')}`,
     },
     {
       id: 8,
-      name: 'Today Deals',
+      name: `${t('navbar.menu.deals')}`,
     },
     {
       id: 9,
-      name: 'Whole Foods',
+      name: `${t('navbar.menu.foods')}`,
     },
     {
       id: 10,
-      name: 'Amazon Home',
+      name: `${t('navbar.menu.home')}`,
     },
-  ];
+  ]; 
+
   return (
     <div className={style.navbar}>
       <div className={style.burguerBtn}>

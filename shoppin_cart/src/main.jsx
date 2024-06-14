@@ -7,6 +7,8 @@ import i18next from 'i18next';
 
 import global_es from "./translations/es/global.json"
 import global_en from "./translations/en/global.json"
+import navbarTranslation_en from "./translations/en/navbarTranslation.json"
+import navbarTranslation_es from "./translations/es/navbarTranslation.json"
 
 
 i18next.init({
@@ -14,10 +16,12 @@ i18next.init({
   lng:"en",
   resources:{
     es:{
-      global:global_es
+      global:global_es,
+      navbarTranslation: navbarTranslation_es
     },
     en:{
-      global:global_en
+      global:global_en,
+      navbarTranslation: navbarTranslation_en
     },
   },
 });

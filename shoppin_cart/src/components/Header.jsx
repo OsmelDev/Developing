@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const { t, i18n } = useTranslation('global');
+  
   const [searchInput, setSearchInput] = useState('');
   const { filter, setFilter } = useContext(FilterContext);
   const { categories } = loadProduct();
@@ -34,6 +35,7 @@ const Header = () => {
 
       <span className={style.ubication}>
         {t('header.ubication')}
+        
         <p>
           <GrLocation />
           Cuba
