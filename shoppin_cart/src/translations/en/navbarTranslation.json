@@ -10,7 +10,9 @@
 			"services": "Customer Services",
 			"deals": "Today Deals",
 			"foods": "Whole Foods",
-			"home": "Amazon Home"
+			"home": "Amazon Home",
+		"all": "All",
+		"event": "Celebrate National Small Business Month"
 
 		}
 	}

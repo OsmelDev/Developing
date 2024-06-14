@@ -56,7 +56,7 @@ console.log(t('navbar.menu.medical'))
     <div className={style.navbar}>
       <div className={style.burguerBtn}>
         <IoMenu />
-        <p>All</p>
+        <p>{t('navbar.menu.all')}</p>
       </div>
       <div className={style.navFill}>
         <ul>
@@ -66,9 +66,9 @@ console.log(t('navbar.menu.medical'))
         </ul>
       </div>
 
-      <div>
+      <div className={style.btnEventContainer}>
         <button className={style.btnEvent}>
-          Celebrate National Small Business Month
+          {t('navbar.menu.event')}
         </button>
       </div>
     </div>

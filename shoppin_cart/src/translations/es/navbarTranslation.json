@@ -10,8 +10,9 @@
 			"services": "Servicios al Cliente",
 			"deals": "Ofertas de hoy",
 			"foods": "Alimentos Integrales",
-			"home": "Inicio Amazon"
-
+			"home": "Inicio Amazon",
+			"all": "Todos",
+			"event": "Celebre el Mes Nacional de las Pequenas Empresas"
 		}
 	}
 }
