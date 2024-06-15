@@ -2,9 +2,11 @@ import React, { useRef, useState } from 'react';
 import style from './styles/sidebar.module.css';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import { useHandleScroll } from '../hooks/useHandleScroll';
-import { data } from '../assets/dataSidebat.json';
+import { data}  from '../assets/dataSidebat.jsx';
+import { useTranslation } from 'react-i18next';
 
 const Sidebar = () => {
+  const {t, i18n}=useTranslation("sidebarTranslation")
   const { handleScroll, containerRef, ITEM_WIDTH } = useHandleScroll();
   const degradado = 'linear-gradient(rgba(255,255,255,0.2),rgb(255,255,255))';
   
@@ -32,7 +34,9 @@ const Sidebar = () => {
                 backgroundImage: `${degradado},url(${d.image})`,
               }}
             >
-              <p>{d.name}</p>
+              <p>
+              {t(`sidebar.${d.name}`)}
+              </p>
             </div>
           ))}
         </div>

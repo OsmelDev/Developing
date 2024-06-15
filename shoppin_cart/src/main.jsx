@@ -9,6 +9,8 @@ import global_es from "./translations/es/global.json"
 import global_en from "./translations/en/global.json"
 import navbarTranslation_en from "./translations/en/navbarTranslation.json"
 import navbarTranslation_es from "./translations/es/navbarTranslation.json"
+import sidebarTranslation_en from "./translations/en/sidebarTranslation.json"
+import sidebarTranslation_es from "./translations/es/sidebarTranslation.json"
 
 
 i18next.init({
@@ -17,11 +19,13 @@ i18next.init({
   resources:{
     es:{
       global:global_es,
-      navbarTranslation: navbarTranslation_es
+      navbarTranslation: navbarTranslation_es,
+      sidebarTranslation: sidebarTranslation_es
     },
     en:{
       global:global_en,
-      navbarTranslation: navbarTranslation_en
+      navbarTranslation: navbarTranslation_en,
+      sidebarTranslation: sidebarTranslation_en
     },
   },
 });
