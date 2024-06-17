@@ -15,7 +15,7 @@ const Cart = () => {
         <LiaOpencart />
       </label>
       <input id={cartCheckboxId} type='checkbox' hidden />
-
+ 
       <aside className={style.cart}>
         {state.map((product) => (
           <CartIten

@@ -7,11 +7,16 @@ import Cart from './Cart';
 import { FilterContext } from '../context/filterContext';
 import { loadProduct } from '../hooks/fetch';
 import { TiArrowSortedDown } from 'react-icons/ti';
+import Login from './components/Login.jsx'
 
 const Header = () => {
   const [searchInput, setSearchInput] = useState('');
   const { filter, setFilter } = useContext(FilterContext);
   const { categories } = loadProduct();
+  const [user, setUser]=useState('')
+  const [password, setPassword]=useState('')
+  const [isLogin, setIsLogin]=useState(false)
+
 
   const hadleChangeCategory = (event) => {
     setFilter((prevState) => ({
@@ -56,16 +61,22 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <span>
-        Hello, sign in <br />
-        Acconunt & List
-      </span>
+
+      <Login user={user} 
+      setUser={setUser} 
+      password={password} 
+      setPassword={setPassword} 
+      isLogin={isLogin} 
+      setIsLogin={setIsLogin}
+      />
 
       <span>
         Returns <br />& Orders
       </span>
-
-      <Cart />
+{
+  isLogin ? <Cart /> : ""
+}
+      
     </div>
   );
 };
