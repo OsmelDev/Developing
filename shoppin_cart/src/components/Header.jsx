@@ -1,4 +1,4 @@
-import React, { useId, useState, useContext } from 'react';
+import React, { useId, useState, useContext, useEffect } from 'react';
 import style from './styles/header.module.css';
 import { IoSearchSharp } from 'react-icons/io5';
 import { IMG_URL, IMG_URL_Local } from '../assets/constant';
@@ -8,8 +8,9 @@ import { FilterContext } from '../context/filterContext';
 import { loadProduct } from '../hooks/fetch';
 import en from '../assets/images/en.svg';
 import es from '../assets/images/es.svg';
-
 import { useTranslation } from 'react-i18next';
+import { getCoutryUser, loadProduct } from '../hooks/fetch';
+import { TiArrowSortedDown } from 'react-icons/ti';
 
 const Header = () => {
   const { t, i18n } = useTranslation('global');
@@ -17,6 +18,8 @@ const Header = () => {
   const [searchInput, setSearchInput] = useState('');
   const { filter, setFilter } = useContext(FilterContext);
   const { categories } = loadProduct();
+  // const {geolocation}=getUserGeolocation()
+  const {country}= getCoutryUser()
 
   const hadleChangeCategory = (event) => {
     setFilter((prevState) => ({
@@ -26,19 +29,19 @@ const Header = () => {
   };
 
   const categoryFilterId = useId();
-
+ 
   return (
     <div className={style.header}>
       <div className={style.logo}>
         <img src={IMG_URL || IMG_URL_Local} alt='' />
       </div>
-
       <span className={style.ubication}>
         {t('header.ubication')}
-        
+      <span className={style.ubication} >
+        Deliver to{' '}
         <p>
           <GrLocation />
-          Cuba
+          {country}
         </p>
       </span>
 
