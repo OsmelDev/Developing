@@ -1,16 +1,17 @@
 {
   "header": {
     "ubication": "Send to",
-    "account":{
+    "account": {
       "greeting": "Hello, sign in",
-      "login": "Acconunt & List"
+      "login": "Acconunt & List",
+      "logout": "Log Out"
     },
-    "orders":{
-      "returns":"Returns",
-      "orders":"& orders"
+    "orders": {
+      "returns": "Returns",
+      "orders": "& orders"
     },
     "categories": {
-      "all":"All",
+      "all": "All",
       "electronics": "Electronics",
       "jewelery": "Jewelery",
       "clothing": {

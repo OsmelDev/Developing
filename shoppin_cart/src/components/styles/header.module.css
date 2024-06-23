@@ -169,26 +169,8 @@
 .languaje:hover{
  color: #e97a20;
 }
-.loginContainer{
-  height: 35px;
-  padding: 10px 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-  p{
-    margin: 0;
-  }
-}
-.loginContainer:hover{
-  border: 1px solid;
-}
-.loginContainer p:first-child{
-  font-weight: 300;
-  text-align: left;
-  font-size: 13px;
-  color: rgb(255, 255, 255);
-}
+
+
 .infoContainer{
   height: 35px;
   padding: 10px 5px;

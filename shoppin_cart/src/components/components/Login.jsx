@@ -1,12 +1,11 @@
 import React,{useId, useState} from 'react'
 import style from './styles/login.module.css'
+import { useTranslation } from 'react-i18next';
 
 const Login = ({user, setUser, password, setPassword, isLogin, setIsLogin}) => {
 
 const loginId=useId();
-
-
-
+const { t, i18n } = useTranslation('global');
 
 function handleSubmit(e){
 	e.preventDefault();
@@ -25,21 +24,24 @@ function handleLogout(){
 }
 	return (
 		<div>
-			<div>
+			<div className={style.loginContainer}>
 			{
 				isLogin? 
-				<label onClick={()=>handleLogout()} >
-					<span>
-						Log-out
-					</span>
+				<label onClick={()=>handleLogout()} className={style.loginout}>
+					<p>
+						{t('header.account.logout')}
+					</p>
 				</label> :
 				<label htmlFor={loginId} className={style.loginButton}>
 					<span>
-       	 		Hello, sign in <br />
-       			Acconunt & List
-      		</span>
+					  <p>
+					    {t('header.account.greeting')}	
+					  </p>
+					  <p>
+					    {t('header.account.login')}	
+				   	</p>
+       		</span>
 				</label>
-
 			}
 				<input type="checkbox" id={loginId} hidden/>
 

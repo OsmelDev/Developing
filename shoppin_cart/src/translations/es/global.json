@@ -3,14 +3,15 @@
     "ubication": "Enviar a",
     "account": {
       "greeting": "Hola, inicia sesión",
-      "login": "Cuenta y lista"
+      "login": "Cuenta y lista",
+      "logout": "Cerrar"
     },
     "orders": {
       "returns": "Devoluciones",
       "orders": "y pedidos"
     },
     "categories": {
-      "all":"Todos",
+      "all": "Todos",
       "electronics": "Electrónica",
       "jewelery": "Joyería",
       "clothing": {
