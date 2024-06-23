@@ -19,7 +19,7 @@ const Screen = () => {
         <div className={style.siginContainer}>
           <p>{t('screen.footer.title')}</p>
           <button className={style.signinButton}>{t('screen.footer.button')}</button>
-          <p>{t('screen.footer.register.costomer')} <a href="#">{t('screen.footer.register.start')}</a></p>
+          <p>{t('screen.footer.register.costomer')} <a href="#">{t('screen.footer.register.star')}</a></p>
         </div>
 
         <div className={style.goToTopButton}>

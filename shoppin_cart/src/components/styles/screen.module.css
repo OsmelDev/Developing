@@ -20,10 +20,11 @@
   height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-top: 30px;
 }
 .siginContainer{
-  border: 1px solid #b9b4b4;
+  border: 1px solid #e3e6e6;
   padding: 15px 0 15px 0;
 }
 .siginContainer p:first-child{
@@ -47,7 +48,7 @@
   cursor: pointer;
 }
 .goToTopButton{
-  background-color: #232f3e;
+  background-color: #37475A;
   color: aliceblue;
   font-weight: 400;
   text-align: center;
