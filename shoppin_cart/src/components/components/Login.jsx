@@ -44,10 +44,6 @@ function handleLogout(){
 				</label>
 			}
 				<input type="checkbox" id={loginId} hidden/>
-
-				
-				
-
 				<form onSubmit={handleSubmit} className={style.formLogin}>
 				<div className={style.formLoginContainer}>
 					<label >User</label>

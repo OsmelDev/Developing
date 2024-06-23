@@ -11,6 +11,8 @@ import navbarTranslation_en from "./translations/en/navbarTranslation.json"
 import navbarTranslation_es from "./translations/es/navbarTranslation.json"
 import sidebarTranslation_en from "./translations/en/sidebarTranslation.json"
 import sidebarTranslation_es from "./translations/es/sidebarTranslation.json"
+import screenTranslation_en from "./translations/en/screenTranslation.json"
+import screenTranslation_es from "./translations/es/screenTranslation.json"
 
 
 i18next.init({
@@ -20,12 +22,14 @@ i18next.init({
     es:{
       global:global_es,
       navbarTranslation: navbarTranslation_es,
-      sidebarTranslation: sidebarTranslation_es
+      sidebarTranslation: sidebarTranslation_es,
+      screenTranslation: screenTranslation_es
     },
     en:{
       global:global_en,
       navbarTranslation: navbarTranslation_en,
-      sidebarTranslation: sidebarTranslation_en
+      sidebarTranslation: sidebarTranslation_en,
+      screenTranslation: screenTranslation_en
     },
   },
 });

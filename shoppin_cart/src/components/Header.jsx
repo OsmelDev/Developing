@@ -92,22 +92,22 @@ const Header = () => {
         </div>
       </div>
 
- <Login user={user} 
-      setUser={setUser} 
-      password={password} 
-      setPassword={setPassword} 
-      isLogin={isLogin} 
-      setIsLogin={setIsLogin}
-      />
+      <Login user={user} 
+       setUser={setUser} 
+       password={password} 
+       setPassword={setPassword} 
+       isLogin={isLogin} 
+       setIsLogin={setIsLogin}
+       />
 
 
       <div className={style.infoContainer}>
         <p>{t('header.orders.returns')}</p>
         <p>{t('header.orders.orders')}</p>
       </div>
-{
-  isLogin ?  <Cart /> : ''
-}
+      {
+        isLogin ?  <Cart /> : ''
+      }
 
     </div>
   );

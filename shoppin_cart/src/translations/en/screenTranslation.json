@@ -1,0 +1,13 @@
+{
+	"screen": {
+		"footer": {
+			"title": "See personalized recommendations",
+			"button": "Sign in",
+			"register": {
+				"costomer": "New costomer ?",
+				"star": "Start here"
+			},
+		"back": "Back to Top"
+		}
+	}
+}

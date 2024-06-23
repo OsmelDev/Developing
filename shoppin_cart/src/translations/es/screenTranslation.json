@@ -1,0 +1,13 @@
+{
+	"screen": {
+		"footer": {
+			"title": "Ver recomendaciones personalizadas",
+			"button": "Iniciar sesión",
+			"register": {
+				"costomer": "Nuevo cliente ?",
+				"star": "Empieza aqui"
+			},
+			"back": "Volver arriba"
+		}
+	}
+}
