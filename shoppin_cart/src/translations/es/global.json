@@ -1,0 +1,22 @@
+{
+  "header": {
+    "ubication": "Enviar a",
+    "account": {
+      "greeting": "Hola, inicia sesión",
+      "login": "Cuenta y lista"
+    },
+    "orders": {
+      "returns": "Devoluciones",
+      "orders": "y pedidos"
+    },
+    "categories": {
+      "all":"Todos",
+      "electronics": "Electrónica",
+      "jewelery": "Joyería",
+      "clothing": {
+        "men's": "Ropa de Hombre",
+        "women's": "Ropa de Mujer"
+      }
+    }
+  }
+}

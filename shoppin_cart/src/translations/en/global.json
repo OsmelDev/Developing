@@ -1,0 +1,22 @@
+{
+  "header": {
+    "ubication": "Send to",
+    "account":{
+      "greeting": "Hello, sign in",
+      "login": "Acconunt & List"
+    },
+    "orders":{
+      "returns":"Returns",
+      "orders":"& orders"
+    },
+    "categories": {
+      "all":"All",
+      "electronics": "Electronics",
+      "jewelery": "Jewelery",
+      "clothing": {
+        "men's": "Men's clothing",
+        "women's": "Women's clothing"
+      }
+    }
+  }
+}
