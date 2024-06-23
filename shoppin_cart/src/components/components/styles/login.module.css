@@ -1,0 +1,31 @@
+.loginButton ~ input:checked ~ .formLogin {
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+  position: fixed;
+  height: 10em;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  top: 75px;
+  background: #fdfeff;
+  color: black;
+  right: 96px;
+  width: 25em;
+}
+.loginButton span:hover{
+cursor: pointer;
+}
+.formLogin{
+display: none;
+}
+
+.formLoginContainer{
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid red;
+  width: 80%;
+  height: 80%;
+  justify-content: center;
+  padding: 5px;
+}

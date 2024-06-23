@@ -11,6 +11,7 @@ import es from '../assets/images/es.svg';
 import { useTranslation } from 'react-i18next';
 import { getCoutryUser, loadProduct } from '../hooks/fetch';
 import { TiArrowSortedDown } from 'react-icons/ti';
+import Login from './components/Login.jsx'
 
 const Header = () => {
   const { t, i18n } = useTranslation('global');
@@ -18,8 +19,12 @@ const Header = () => {
   const [searchInput, setSearchInput] = useState('');
   const { filter, setFilter } = useContext(FilterContext);
   const { categories } = loadProduct();
-  // const {geolocation}=getUserGeolocation()
+
+  const [user, setUser]=useState('')
+  const [password, setPassword]=useState('')
+  const [isLogin, setIsLogin]=useState(false)
   const {country}= getCoutryUser()
+
 
   const hadleChangeCategory = (event) => {
     setFilter((prevState) => ({
@@ -58,13 +63,7 @@ const Header = () => {
             </option>
             <option value="women's clothing">
               {t("header.categories.clothing.women's")}{' '}
-            </option>
-
-            {/* {categories.map((category, i) => (
-              <option key={i} value={category}>
-                {category}{' '}
-              </option>
-            ))} */}
+            </option>           
           </select>
         </div>
 
@@ -78,8 +77,21 @@ const Header = () => {
           </button>
         </div>
       </div>
+      <Login user={user} 
+      setUser={setUser} 
+      password={password} 
+      setPassword={setPassword} 
+      isLogin={isLogin} 
+      setIsLogin={setIsLogin}
+      />
 
-      <div className={style.languajeSelectorContainer}>
+      <span>
+        Returns <br />& Orders
+      </span>
+{
+  isLogin ? <Cart /> : ""
+}
+       <div className={style.languajeSelectorContainer}>
         <div id={style.languajeSelector}>
           <span
             className={style.languaje}
@@ -106,6 +118,7 @@ const Header = () => {
       </div>
 
       <Cart />
+
     </div>
   );
 };
