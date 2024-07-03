@@ -1,0 +1,23 @@
+.siginContainer{
+  border: 1px solid #e3e6e6;
+  padding: 15px 0 15px 0;
+}
+.siginContainer p:first-child{
+  font-weight: 400;
+  text-align: center;
+  font-size: 13px;
+}
+.siginContainer p:last-child{
+  font-weight: 400;
+  text-align: center;
+  font-size: 11px;
+}
+.signinButton{
+  width: 20%;
+  background: #ffa000;
+  height: 25%;
+  outline: none;
+  border-radius: 5px;
+  border: solid 1px #ca5a08fa;
+  cursor: pointer;
+}

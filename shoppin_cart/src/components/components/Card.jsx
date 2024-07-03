@@ -14,14 +14,13 @@ const Card = ({
   return (
     <div className={style.card}>
       <h3>{category}</h3>
-      <img src={picture} alt={nombre} />
-      <p>{nombre}</p>
+      <img src={picture} alt={nombre.substr(0, 20)} />
+      <p>{nombre.substr(0, 20 )}</p>
       <div className={style.contentBtn}>
         <button
           style={{
-            backgroundColor: isProductInCart
-              ? 'rgb(233, 122, 32)'
-              : '#807e7ecc',
+            backgroundColor: isProductInCart ? 'rgb(233, 122, 32)' : '#807e7ecc',
+            
           }}
           onClick={() =>
             isProductInCart

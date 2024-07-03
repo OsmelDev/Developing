@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
@@ -9,6 +9,8 @@ import { FilterProvider } from './context/filterContext.jsx';
 import { CartProvider } from './context/cartContext.jsx';
 
 const App = () => {
+  
+
   return (
     <div className={style.app}>
       <FilterProvider>

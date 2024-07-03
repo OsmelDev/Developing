@@ -5,6 +5,7 @@ import { IMG_URL, IMG_URL_Local } from '../assets/constant';
 import { GrLocation } from 'react-icons/gr';
 import Cart from './Cart';
 import { FilterContext } from '../context/filterContext';
+import {CartContext} from '../context/cartContext';
 import en from '../assets/images/en.svg';
 import es from '../assets/images/es.svg';
 import { useTranslation } from 'react-i18next';
@@ -13,11 +14,12 @@ import { TiArrowSortedDown } from 'react-icons/ti';
 import Login from './components/Login.jsx'
 
 const Header = () => {
+  const {user, setUser} = useContext(CartContext)
   const { t, i18n } = useTranslation('global');
   const [searchInput, setSearchInput] = useState('');
   const { filter, setFilter } = useContext(FilterContext);
   const { categories } = loadProduct();
-  const [user, setUser]=useState('')
+  
   const [password, setPassword]=useState('')
   const [isLogin, setIsLogin]=useState(false)
   const {country}= getCoutryUser()
@@ -92,7 +94,8 @@ const Header = () => {
         </div>
       </div>
 
-      <Login user={user} 
+      <Login 
+       user={user} 
        setUser={setUser} 
        password={password} 
        setPassword={setPassword} 

@@ -10,7 +10,7 @@ const { t, i18n } = useTranslation('global');
 function handleSubmit(e){
 	e.preventDefault();
 }
-function handleRegister(){
+function handleLogin(){
 	let data = {
 		username: user,
 		password: password
@@ -22,6 +22,7 @@ function handleRegister(){
 function handleLogout(){
 	setIsLogin(false)
 }
+
 	return (
 		<div>
 			<div className={style.loginContainer}>
@@ -47,11 +48,11 @@ function handleLogout(){
 				<form onSubmit={handleSubmit} className={style.formLogin}>
 				<div className={style.formLoginContainer}>
 					<label >User</label>
-				  <input type='text' value={user} placeholder='username' onChange={(event)=> setUser(event.target.value)}/>
+				  <input type='text' placeholder='username' onChange={(event)=> setUser(event.target.value)}/>
 				  <label >Password</label>
-				  <input type="password" value={password} placeholder='password' onChange={(event)=> setPassword(event.target.value)}/>
+				  <input type="password" placeholder='password' onChange={(event)=> setPassword(event.target.value)}/>
 				</div>
-				<button onClick={()=> handleRegister()}>
+				<button type="submit" onClick={()=> handleLogin()}>
 					submit
 				</button>
 				</form>
