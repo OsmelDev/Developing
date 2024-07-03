@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import styles from "./NavBar.module.css";
+
 export const NavBar = () => {
   
   const links = [
@@ -17,16 +18,8 @@ export const NavBar = () => {
       link: "Skill",
     },
     {
-      id: 4,
-      link: "Services",
-    },
-    {
-      id: 5,
-      link: "Portofolio",
-    },
-    {
       id: 6,
-      link: "Contact",
+      link: "Portofolio",
     },
   ];
 

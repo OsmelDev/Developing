@@ -1,0 +1,23 @@
+.portofolio{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.cartEcommerce{
+  display: flex;
+  justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	img{
+		border: 1px aliceblue solid;
+		border-radius: 15px;
+		width: 100px;
+		height: 100px;
+	}
+	img:hover{
+		cursor: pointer;
+		scale: 1.1;
+	};
+
+}

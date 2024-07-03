@@ -1,15 +1,12 @@
 .About {
   width: 100%;
   height: 600px;
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   align-content: center;
 }
-.About a{
-  text-decoration: none;
-  color: aliceblue;
-}
+
+
 
 .headAbout {
   display: flex;
@@ -29,7 +26,6 @@
   width: 100%;
   height: 60%;
   padding-top: 50px;
-  /* border: 1px solid blue; */
   justify-content: space-evenly;
 }
 .webImage {
@@ -42,7 +38,6 @@
   max-width: 100%;
   height: 110px;
   padding: 0;
-  /* border: 1px solid yellow; */
   margin: 0;
 }
  
@@ -75,7 +70,6 @@
 }
 
 .aboutMe {
-  /* border: 1px solid; */
   width: 35%;
   height: 300px;
   padding: 0;
@@ -91,14 +85,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #b4acac;
   background-color: #0e0d0d;
   transition: 0.5s;
+  a{
+  text-decoration: none;
+  color: #b4acac;
+  }
 }
 .aboutMe button:hover {
-  color: #0e0d0d;
   background-color: hsl(0, 4%, 57%);
   cursor: pointer;
+  a{
+    color: black;
+  }
 }
 .docIcon {
   margin-left: 10px;
