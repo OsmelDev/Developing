@@ -1,0 +1,64 @@
+.aboutHeader{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	margin-top: 20px;
+}
+.aboutArticle{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15rem;
+	margin-top: 50px;
+}
+.section{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.sectionInfo{
+	display: flex;
+	gap: 3rem;
+}
+.infoPersonal{
+	border: 3px solid #b3aeae;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+	border-radius: 10px;
+	background: #a0a2a470;
+}
+.icon{
+	width: 30px;
+	height: 30px;
+}
+.button{
+	height: 50px;
+	width: 120px;
+	background-color: black;
+	color: aliceblue;
+	border: none;
+	border-radius: 5px;
+	transition: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	gap: 10px;
+	padding: 0 5px;
+	.buttonDownload{
+		display: flex;
+		align-items: center;
+		gap: .5rem;
+	}
+}
+.button:hover{
+	background-color: aliceblue;
+	cursor: pointer; 
+	color: black;
+	.buttonDownload{
+	color: black;
+}
+}

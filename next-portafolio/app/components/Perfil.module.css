@@ -11,23 +11,27 @@
   background-position: center;
   background-size: cover;
   width: 280px;
-  height: 280px;
+  height: 300px;
 	box-shadow: inset 0 0 0 9px rgba(238, 237, 237, 0.389);
   justify-self: center;
 	animation: profile__animate 8s ease-in-out infinite 1ms;
 }
 @keyframes profile__animate {
- 	 	0%{
-   	 border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
-  	}
- 	 	50%{
-  	  border-radius: 30% 60% 70% 40%/50% 60% 30% 60% ;
-  	}
-  	100%{
-   	 border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
-  	}
-	}
-
+ 	0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+  }
+ 	50%{
+  	border-radius: 30% 60% 70% 40%/50% 60% 30% 60% ;
+  }
+  100%{
+   	border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+  }
+}
+.description{
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
 .button{
 	height: 50px;
 	width: 120px;
@@ -64,7 +68,6 @@
 	width: 50px;
 	transition: 0.5s;
 }
-
 .iconFeed:hover{
 	scale: 1.1;
 	color: aliceblue;
