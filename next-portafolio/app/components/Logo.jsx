@@ -4,7 +4,7 @@ import styles from './Logo.module.css'
 const Logo = () => {
 	return (
 		<div className={styles.logoContainer}>
-			<h2>Portafolios</h2>
+			<h2>Developer Web Portafolio</h2>
 		</div>
 	)
 }

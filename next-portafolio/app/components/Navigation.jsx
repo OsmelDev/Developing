@@ -13,7 +13,14 @@ const links = [
   },{
     label: 'Skill',
     route: '/skill'
+  },{
+    label: 'Portafolio',
+    route: '/portafolio'
+  },{
+    label: 'Contact',
+    route: '/contact'
   }
+
 ]
 
 const Navigation = () => {
