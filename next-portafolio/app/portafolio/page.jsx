@@ -1,6 +1,9 @@
+
+import CartSites from '../components/cartSites.jsx'
+
+
 export default function PortafolioPage(){
 	return (
-		<h1>Este es el portafolio</h1>
-
-		)
+		<CartSites/>
+  )
 }

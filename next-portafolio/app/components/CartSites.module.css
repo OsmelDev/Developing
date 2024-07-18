@@ -1,0 +1,31 @@
+.portafolio{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+.cartSite {
+	width: 60rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 3rem;
+	border:2px solid  grey;
+	padding: 10px;
+	border-radius: 10px;
+	transition: 0.5s;
+	&	img{
+		width: 150px;
+		height: 150px;
+		border-radius: 10px;
+	}
+}
+.cartSite:hover{
+	scale: 1.1;
+	border:2px solid #e5f4f454;
+	cursor: pointer;
+}
