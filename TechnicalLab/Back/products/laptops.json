@@ -1,0 +1,82 @@
+[
+  {
+    "category": "Laptop",
+    "brand": "Dell",
+    "description": "Dell XPS 13 Laptop",
+    "price": 999.99,
+    "image": "https://example.com/dell-xps-13.jpg",
+    "rate": 4.5
+  },
+  {
+    "category": "Laptop",
+    "brand": "Apple",
+    "description": "Apple MacBook Pro 16-inch",
+    "price": 2399.99,
+    "image": "https://example.com/macbook-pro-16.jpg",
+    "rate": 4.7
+  },
+  {
+    "category": "Laptop",
+    "brand": "HP",
+    "description": "HP Spectre x360 Convertible 14",
+    "price": 1299.99,
+    "image": "https://example.com/hp-spectre-x360.jpg",
+    "rate": 4.6
+  },
+  {
+    "category": "Laptop",
+    "brand": "Lenovo",
+    "description": "Lenovo ThinkPad X1 Carbon Gen 9",
+    "price": 1499.99,
+    "image": "https://example.com/lenovo-thinkpad-x1.jpg",
+    "rate": 4.5
+  },
+  {
+    "category": "Laptop",
+    "brand": "Asus",
+    "description": "Asus ROG Zephyrus G14 Gaming Laptop",
+    "price": 1799.99,
+    "image": "https://example.com/asus-rog-zephyrus-g14.jpg",
+    "rate": 4.8
+  },
+  {
+    "category": "Laptop",
+    "brand": "Acer",
+    "description": "Acer Swift 3",
+    "price": 699.99,
+    "image": "https://example.com/acer-swift-3.jpg",
+    "rate": 4.4
+  },
+  {
+    "category": "Laptop",
+    "brand": "Microsoft",
+    "description": "Microsoft Surface Laptop 4",
+    "price": 999.99,
+    "image": "https://example.com/surface-laptop-4.jpg",
+    "rate": 4.6
+  },
+  {
+    "category": "Laptop",
+    "brand": "Razer",
+    "description": "Razer Blade 15 Gaming Laptop",
+    "price": 1999.99,
+    "image": "https://example.com/razer-blade-15.jpg",
+    "rate": 4.7
+  },
+  {
+    "category": "Laptop",
+    "brand": "Samsung",
+    "description": "Samsung Galaxy Book Pro 360",
+    "price": 1299.99,
+    "image": "https://example.com/samsung-galaxy-book-pro-360.jpg",
+    "rate": 4.5
+  },
+  {
+    "category": "Laptop",
+    "brand": "LG",
+    "description": "LG Gram 17",
+    "price": 1899.99,
+    "image": "https://example.com/lg-gram-17.jpg",
+    "rate": 4.6
+  }
+]

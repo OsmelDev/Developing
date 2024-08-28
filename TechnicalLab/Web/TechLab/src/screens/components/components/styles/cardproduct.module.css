@@ -1,0 +1,17 @@
+.card {
+	width: 250px;
+	height: 270px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 10px;
+	background: #1a1a1a;
+	text-align: center;
+}
+.card:hover {
+	transition: 0.5s all ease-out;
+	cursor: pointer;
+	color: #6060b5;
+	border: 0.5px solid #6060b5;
+}

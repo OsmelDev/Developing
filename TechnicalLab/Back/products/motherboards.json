@@ -1,0 +1,402 @@
+[
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image1.jpg",
+    "price": "$150",
+    "rate": "4.5",
+    "description": "ATX motherboard with support for Intel 10th/11th gen processors",
+    "parts": "Form Factor: ATX, Socket: LGA 1200, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image2.jpg",
+    "price": "$120",
+    "rate": "4.2",
+    "description": "Micro ATX motherboard for budget builds",
+    "parts": "Form Factor: Micro ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image3.jpg",
+    "price": "$200",
+    "rate": "4.8",
+    "description": "High-end gaming motherboard with RGB lighting",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image4.jpg",
+    "price": "$180",
+    "rate": "4.6",
+    "description": "ATX motherboard with support for AMD Ryzen processors",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image5.jpg",
+    "price": "$130",
+    "rate": "4.3",
+    "description": "Budget-friendly motherboard for Intel builds",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 2, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image6.jpg",
+    "price": "$220",
+    "rate": "4.7",
+    "description": "Premium motherboard with advanced overclocking features",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 4"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image7.jpg",
+    "price": "$110",
+    "rate": "4.1",
+    "description": "Entry-level motherboard for basic computing tasks",
+    "parts": "Form Factor: Mini ITX, Socket: AM4, RAM Slots: 2, PCIe Slots: 1"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image8.jpg",
+    "price": "$160",
+    "rate": "4.9",
+    "description": "Gaming motherboard with dual LAN ports",
+    "parts": "Form Factor: ATX, Socket: LGA 1200, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image9.jpg",
+    "price": "$140",
+    "rate": "4.5",
+    "description": "Micro ATX motherboard with integrated graphics",
+    "parts": "Form Factor: Micro ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image10.jpg",
+    "price": "$210",
+    "rate": "4.8",
+    "description": "High-performance motherboard for content creators",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image11.jpg",
+    "price": "$190",
+    "rate": "4.6",
+    "description": "ATX motherboard with support for DDR5 RAM",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image12.jpg",
+    "price": "$130",
+    "rate": "4.3",
+    "description": "Budget motherboard with essential features",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 2, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image13.jpg",
+    "price": "$230",
+    "rate": "4.9",
+    "description": "Gaming motherboard with customizable RGB lighting",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 4"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image14.jpg",
+    "price": "$150",
+    "rate": "4.5",
+    "description": "Micro ATX motherboard for Intel builds",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 4, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image15.jpg",
+    "price": "$200",
+    "rate": "4.8",
+    "description": "High-end motherboard with advanced audio features",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image16.jpg",
+    "price": "$180",
+    "rate": "4.6",
+    "description": "ATX motherboard with support for AMD Ryzen processors",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image17.jpg",
+    "price": "$120",
+    "rate": "4.2",
+    "description": "Budget-friendly motherboard for basic computing",
+    "parts": "Form Factor: Mini ITX, Socket: LGA 1200, RAM Slots: 2, PCIe Slots: 1"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image18.jpg",
+    "price": "$170",
+    "rate": "4.7",
+    "description": "Gaming motherboard with enhanced cooling solutions",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image19.jpg",
+    "price": "$140",
+    "rate": "4.3",
+    "description": "Micro ATX motherboard with integrated Wi-Fi",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 4, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image20.jpg",
+    "price": "$210",
+    "rate": "4.8",
+    "description": "High-performance motherboard for overclocking",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image21.jpg",
+    "price": "$190",
+    "rate": "4.6",
+    "description": "ATX motherboard with support for multiple GPUs",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 4"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image22.jpg",
+    "price": "$130",
+    "rate": "4.3",
+    "description": "Budget motherboard for Intel builds",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 2, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image23.jpg",
+    "price": "$230",
+    "rate": "4.9",
+    "description": "Gaming motherboard with high-quality capacitors",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image24.jpg",
+    "price": "$150",
+    "rate": "4.5",
+    "description": "Micro ATX motherboard for AMD builds",
+    "parts": "Form Factor: Micro ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image25.jpg",
+    "price": "$200",
+    "rate": "4.8",
+    "description": "High-end motherboard with advanced networking features",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image26.jpg",
+    "price": "$180",
+    "rate": "4.6",
+    "description": "ATX motherboard with support for DDR5 RAM",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image27.jpg",
+    "price": "$120",
+    "rate": "4.2",
+    "description": "Budget motherboard with essential features",
+    "parts": "Form Factor: Mini ITX, Socket: LGA 1200, RAM Slots: 2, PCIe Slots: 1"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image28.jpg",
+    "price": "$170",
+    "rate": "4.7",
+    "description": "Gaming motherboard with customizable RGB lighting",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image29.jpg",
+    "price": "$140",
+    "rate": "4.3",
+    "description": "Micro ATX motherboard for Intel builds",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 4, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image30.jpg",
+    "price": "$210",
+    "rate": "4.8",
+    "description": "High-performance motherboard for content creators",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image31.jpg",
+    "price": "$190",
+    "rate": "4.6",
+    "description": "ATX motherboard with advanced audio features",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image32.jpg",
+    "price": "$130",
+    "rate": "4.3",
+    "description": "Budget-friendly motherboard for basic computing",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 2, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image33.jpg",
+    "price": "$230",
+    "rate": "4.9",
+    "description": "Gaming motherboard with enhanced cooling solutions",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image34.jpg",
+    "price": "$150",
+    "rate": "4.5",
+    "description": "Micro ATX motherboard with integrated Wi-Fi",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 4, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image35.jpg",
+    "price": "$200",
+    "rate": "4.8",
+    "description": "High-performance motherboard for overclocking",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image36.jpg",
+    "price": "$190",
+    "rate": "4.6",
+    "description": "ATX motherboard with support for multiple GPUs",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 4"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image37.jpg",
+    "price": "$130",
+    "rate": "4.3",
+    "description": "Budget motherboard for Intel builds",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 2, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image38.jpg",
+    "price": "$230",
+    "rate": "4.9",
+    "description": "Gaming motherboard with high-quality capacitors",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image39.jpg",
+    "price": "$150",
+    "rate": "4.5",
+    "description": "Micro ATX motherboard for AMD builds",
+    "parts": "Form Factor: Micro ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image40.jpg",
+    "price": "$200",
+    "rate": "4.8",
+    "description": "High-end motherboard with advanced networking features",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image41.jpg",
+    "price": "$180",
+    "rate": "4.6",
+    "description": "ATX motherboard with support for DDR5 RAM",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image42.jpg",
+    "price": "$120",
+    "rate": "4.2",
+    "description": "Budget motherboard with essential features",
+    "parts": "Form Factor: Mini ITX, Socket: LGA 1200, RAM Slots: 2, PCIe Slots: 1"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image43.jpg",
+    "price": "$170",
+    "rate": "4.7",
+    "description": "Gaming motherboard with customizable RGB lighting",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image44.jpg",
+    "price": "$140",
+    "rate": "4.3",
+    "description": "Micro ATX motherboard for Intel builds",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 4, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image45.jpg",
+    "price": "$210",
+    "rate": "4.8",
+    "description": "High-performance motherboard for content creators",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image46.jpg",
+    "price": "$190",
+    "rate": "4.6",
+    "description": "ATX motherboard with advanced audio features",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image47.jpg",
+    "price": "$130",
+    "rate": "4.3",
+    "description": "Budget-friendly motherboard for basic computing",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 2, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image48.jpg",
+    "price": "$230",
+    "rate": "4.9",
+    "description": "Gaming motherboard with enhanced cooling solutions",
+    "parts": "Form Factor: ATX, Socket: AM4, RAM Slots: 4, PCIe Slots: 3"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image49.jpg",
+    "price": "$150",
+    "rate": "4.5",
+    "description": "Micro ATX motherboard with integrated Wi-Fi",
+    "parts": "Form Factor: Micro ATX, Socket: LGA 1200, RAM Slots: 4, PCIe Slots: 2"
+  },
+  {
+    "category": "Motherboard",
+    "image": "https://example.com/image50.jpg",
+    "price": "$200",
+    "rate": "4.8",
+    "description": "High-performance motherboard for overclocking",
+    "parts": "Form Factor: ATX, Socket: LGA 1700, RAM Slots: 4, PCIe Slots: 3"
+  }
+]
