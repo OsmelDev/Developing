@@ -33,7 +33,8 @@ app.get("/:category", cors(), (req, res) => {
 	} else if (category === "monitores") {
 		res.json(monitores);
 	} else if (category === "products") {
-		res.json([...laptops, pcs, grafics, motherboard, hdd, monitores]);
+		let product = laptops.concat(pcs, grafics, motherboard, hdd, monitores);
+		res.json(product);
 	}
 });
 

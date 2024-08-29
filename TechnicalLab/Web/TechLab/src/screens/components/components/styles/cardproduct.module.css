@@ -8,10 +8,16 @@
 	border-radius: 10px;
 	background: #1a1a1a;
 	text-align: center;
+	padding: 10px 0;
 }
 .card:hover {
 	transition: 0.5s all ease-out;
 	cursor: pointer;
 	color: #6060b5;
 	border: 0.5px solid #6060b5;
+}
+.card img {
+	width: 160px;
+	height: 140px;
+	border-radius: 10px;
 }

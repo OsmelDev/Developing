@@ -1,23 +1,9 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import styles from "../styles/layout.module.css";
+import { menuOptions } from "../../assecs/data.js";
 
 const Navbar = () => {
-	const menuOptions = [
-		{
-			screen: "Home",
-			link: "/",
-		},
-		{
-			screen: "Products",
-			link: "/Products",
-		},
-		{
-			screen: "Contact",
-			link: "/Contact",
-		},
-	];
-
 	return (
 		<nav className={styles.nav}>
 			<ul>

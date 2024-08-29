@@ -3,40 +3,12 @@ import styles from "./styles/products.module.css";
 import { useFetchData } from "../hoocks/useFetch.js";
 import BottonsComponent from "./components/BottonsComponent.jsx";
 import Stock from "./components/Stock.jsx";
+import { prod } from "../assecs/data.js";
 
 const Products = () => {
 	const [product, setProduct] = useState("");
 	const { data, fetching } = useFetchData();
-	const prod = [
-		{
-			name: "All",
-			value: "products",
-		},
-		{
-			name: "Laptops",
-			value: "laptops",
-		},
-		{
-			name: "Pc-Escritorio",
-			value: "pcs",
-		},
-		{
-			name: "Motherboard",
-			value: "motherboard",
-		},
-		{
-			name: "Grafics Cards",
-			value: "grafics",
-		},
-		{
-			name: "Hdd Disk",
-			value: "hdd",
-		},
-		{
-			name: "Monitores",
-			value: "monitores",
-		},
-	];
+	console.log(data);
 	return (
 		<div className={styles.productsMain}>
 			<div className={styles.products}>
