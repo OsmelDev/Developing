@@ -12,6 +12,7 @@ const Stock = ({ data }) => {
 					image={d.image}
 					price={d.price}
 					key={i}
+					id={d._id}
 				/>
 			))}
 		</div>

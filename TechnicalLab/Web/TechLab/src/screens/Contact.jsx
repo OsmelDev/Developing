@@ -2,6 +2,7 @@ import React from "react";
 import style from "./styles/contact.module.css";
 import { contacts } from "../assecs/data.js";
 import Personcontact from "./components/PersonContact.jsx";
+
 const Contact = () => {
 	return (
 		<div className={style.containerContact}>

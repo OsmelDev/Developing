@@ -8,7 +8,7 @@ import { prod } from "../assecs/data.js";
 const Products = () => {
 	const [product, setProduct] = useState("");
 	const { data, fetching } = useFetchData();
-	console.log(data);
+
 	return (
 		<div className={styles.productsMain}>
 			<div className={styles.products}>

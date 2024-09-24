@@ -34,36 +34,40 @@ export const menuOptions = [
 		screen: "Contact",
 		link: "/Contact",
 	},
+	// {
+	// 	screen: "Login/Register",
+	// 	link: "/LoginRegister",
+	// },
 ];
 
 export const prod = [
 	{
 		name: "All",
-		value: "products",
+		value: "all",
 	},
 	{
 		name: "Laptops",
-		value: "laptops",
+		value: "Laptop",
 	},
 	{
 		name: "Pc-Gaming",
-		value: "pcs",
+		value: "Pcs",
 	},
 	{
 		name: "Motherboard",
-		value: "motherboard",
+		value: "Motherboard",
 	},
 	{
 		name: "Grafics Cards",
-		value: "grafics",
+		value: "Grafics",
 	},
 	{
 		name: "Hdd Disk",
-		value: "hdd",
+		value: "Hdd-Disk",
 	},
 	{
 		name: "Monitores",
-		value: "monitores",
+		value: "Screen",
 	},
 ];
 

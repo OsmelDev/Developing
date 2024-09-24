@@ -1,0 +1,156 @@
+.formContainerP {
+	width: 50%;
+	height: 373px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 100px auto;
+	align-content: center;
+	align-items: center;
+}
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.bottonContainer {
+	display: flex;
+	width: 60%;
+	justify-content: center;
+	margin: 100px auto 50px auto;
+	gap: 50px;
+}
+.formLogin {
+	display: flex;
+	border: 1px solid #f0f8ff40;
+	border-radius: 10px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: 370px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-size: 0.8rem;
+}
+.formLogin input {
+	display: flex;
+	border: none;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 0;
+	outline: 0;
+}
+.formLogin label {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.formLogin button {
+	width: 28%;
+	background-color: #2b2a33;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.formLoginSucces {
+	color: #04ff04;
+	font-size: 12px;
+	margin: 0 auto;
+	width: 30%;
+	color: #06ff27;
+	height: 27px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+}
+.formLoginErr {
+	background: #fd17179e;
+	width: 100%;
+	border-radius: 3px;
+	padding: 1px;
+	font-size: 15px;
+	margin: 0 auto;
+	color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+}
+.signinContainer {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.formRegister {
+	display: flex;
+	border: 1px solid #f0f8ff40;
+	border-radius: 10px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	height: 90%;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	font-size: 0.8rem;
+}
+.formRegister input {
+	display: flex;
+	border: none;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 0;
+	outline: 0;
+}
+.formRegister label {
+	width: 50%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.formRegister button {
+	width: 28%;
+	background-color: #2b2a33;
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.formRegister Succes {
+	color: #04ff04;
+	font-size: 12px;
+	margin: 0 auto;
+	width: 30%;
+	color: #06ff27;
+	height: 27px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+}
+.formRegister Err {
+	background: #fd17179e;
+	width: 100%;
+	border-radius: 3px;
+	padding: 1px;
+	font-size: 15px;
+	margin: 0 auto;
+	color: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+}
