@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
-import styles from "../styles/layout.module.css";
 import { menuOptions } from "../../assecs/data.js";
 import { useAuth } from "../../contexts/UserProvider.jsx";
 // import { logout } from "../../hoocks/useFetch.js";
