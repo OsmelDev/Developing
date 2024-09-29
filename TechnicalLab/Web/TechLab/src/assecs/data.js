@@ -74,19 +74,19 @@ export const prod = [
 export const contacts = [
 	{
 		name: "Jassan Elevinil Rivero",
-		Whatsapp: "+5355060702",
+		Whatsapp: "5355060702",
 		instagram: "asdasd",
 		facebook: "dasdasd",
 	},
 	{
 		name: "Osmel Prades Triana",
-		Whatsapp: "+5359143856",
+		Whatsapp: "5359143856",
 		instagram: "asdasd",
 		facebook: "dasdasd",
 	},
 	{
 		name: "Taller Tech-Lab",
-		Whatsapp: "779894956",
+		Whatsapp: "+779894956",
 		instagram: "asdasd",
 		facebook: "dasdasd",
 	},

@@ -5,10 +5,10 @@ import Personcontact from "./components/PersonContact.jsx";
 
 const Contact = () => {
 	return (
-		<div className={style.containerContact}>
-			<div className={style.headerTitle}>
-				<h1>Contact</h1>
-				<span>Puede contactarnos a traves de:</span>
+		<div className="bg-gray-900 flex flex-col items-center gap-10 text-white py-16 h-screen">
+			<div className="flex flex-col items-center gap-3">
+				<h1 className="text-3xl">Contact</h1>
+				<span className="text-xl">Puede contactarnos a traves de:</span>
 			</div>
 			<Personcontact />
 		</div>
