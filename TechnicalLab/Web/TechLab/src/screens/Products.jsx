@@ -10,8 +10,8 @@ const Products = () => {
 	const { data, fetching } = useFetchData();
 
 	return (
-		<div className={styles.productsMain}>
-			<div className={styles.products}>
+		<div className="flex flex-col justify-start items-center h-full bg-gray-600">
+			<div className="flex justify-center items-center gap-5 mt-20 mb-10 h-full">
 				{prod.map((d) => (
 					<BottonsComponent
 						fetching={fetching}

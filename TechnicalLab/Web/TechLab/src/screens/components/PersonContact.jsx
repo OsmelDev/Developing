@@ -2,7 +2,6 @@ import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import style from "../styles/contact.module.css";
 import { contacts } from "../../assecs/data.js";
 
 const Personcontact = () => {

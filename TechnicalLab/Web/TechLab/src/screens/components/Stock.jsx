@@ -4,7 +4,7 @@ import styles from "../styles/products.module.css";
 
 const Stock = ({ data }) => {
 	return (
-		<div className={styles.cardContainer}>
+		<div className="grid grid-cols-5 w-full gap-2  ml-10">
 			{data.map((d, i) => (
 				<CardProduct
 					category={d.category}
