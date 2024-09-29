@@ -9,7 +9,7 @@ import { useAuth } from "../contexts/UserProvider.jsx";
 const Layout = () => {
 	const { isAuthenticated } = useAuth();
 	return (
-		<div className={styles.main}>
+		<div className="bg-black h-14 w-full top-0 flex flex-row justify-around fixed">
 			<Logobar />
 			<div className={styles.navContainer}>
 				<Navbar />

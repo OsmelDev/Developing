@@ -10,7 +10,11 @@ const FormLogin = () => {
 	return (
 		<>
 			<div className={style.formContainerP}>
-				<form className={style.formLogin} onSubmit={(e) => e.preventDefault()}>
+				<form
+					className="flex flex-row border border-gray-300"
+					//{style.formLogin}
+					onSubmit={(e) => e.preventDefault()}
+				>
 					<h2>LOGIN</h2>
 					{err.length > 0 ? (
 						<span className={style.formLoginErr}>{err}</span>
