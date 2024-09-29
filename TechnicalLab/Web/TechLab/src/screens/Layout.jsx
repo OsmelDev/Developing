@@ -9,9 +9,9 @@ import { useAuth } from "../contexts/UserProvider.jsx";
 const Layout = () => {
 	const { isAuthenticated } = useAuth();
 	return (
-		<div className="bg-black h-14 w-full top-0 flex flex-row justify-around fixed">
+		<div className="bg-black h-14 w-full top-0 flex flex-row justify-between px-8 fixed">
 			<Logobar />
-			<div className={styles.navContainer}>
+			<div className="flex flex-row justify-center items-center gap-8">
 				<Navbar />
 				{isAuthenticated ? <Cart /> : null}
 			</div>
