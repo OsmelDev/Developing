@@ -1,6 +1,5 @@
 import React from "react";
 import CardProduct from "./components/CardProduct.jsx";
-import styles from "../styles/products.module.css";
 
 const Stock = ({ data }) => {
 	return (
