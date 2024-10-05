@@ -5,6 +5,7 @@ import {
 	handleLogin,
 	handleLogout,
 	handleUpdate,
+	handleChangePass,
 } from "../hoocks/useFetch.js";
 import Cookie from "js-cookie";
 
@@ -28,7 +29,10 @@ export const UserProvider = ({ children }) => {
 	const [ci, setCi] = useState("");
 	const [email, setEmail] = useState("");
 	const [msgUpd, setMsgUpd] = useState("");
-
+	const [newPass, setNewPass] = useState("");
+	const [newPassRepeat, setNewPassRepeat] = useState("");
+	const [errPass, setErrPass] = useState("");
+	const [isEdit, setIsEdit] = useState(false);
 	const [confirmPass, setConfirmPass] = useState("");
 	const [dataUser, setDataUser] = useState([]);
 	const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -89,7 +93,6 @@ export const UserProvider = ({ children }) => {
 
 	async function update() {
 		let id = dataUser._id;
-		console.log(id);
 		let dataUpdate = await handleUpdate({
 			id,
 			fristName,
@@ -103,6 +106,22 @@ export const UserProvider = ({ children }) => {
 		setMsgUpd(dataUpdate);
 	}
 
+	async function changePass() {
+		if ((password != "" && newPass != "") || newPassRepeat != "") {
+			if (newPass === newPassRepeat) {
+				let id = dataUser._id;
+				const passUpdate = await handleChangePass({ password, newPass, id });
+
+				if (!passUpdate) console.log("no hay datos");
+				setMsgUpd(passUpdate);
+			} else {
+				setErrPass("deben coincidir");
+			}
+		} else {
+			setErrPass("los campos son requeridos");
+		}
+	}
+
 	async function logout() {
 		const res = await handleLogout();
 		if (res.status === 200) {
@@ -112,15 +131,21 @@ export const UserProvider = ({ children }) => {
 	}
 
 	useEffect(() => {
-		if (err.length > 0 || msg.length > 0) {
+		if (
+			err.length > 0 ||
+			msg.length > 0 ||
+			msgUpd.length > 0 ||
+			errPass.length > 0
+		) {
 			const timer = setTimeout(() => {
 				setErr([]);
 				setMsg([]);
 				setMsgUpd([]);
-			}, 5000);
+				setErrPass([]);
+			}, 3000);
 			return () => clearTimeout(timer);
 		}
-	}, [err, msg, msgUpd]);
+	}, [err, msg, msgUpd, errPass]);
 
 	useEffect(() => {
 		if (isAuthenticated) navigation("/Profile");
@@ -187,6 +212,12 @@ export const UserProvider = ({ children }) => {
 				setEmail,
 				update,
 				msgUpd,
+				setNewPass,
+				changePass,
+				setNewPassRepeat,
+				errPass,
+				isEdit,
+				setIsEdit,
 			}}
 		>
 			{children}

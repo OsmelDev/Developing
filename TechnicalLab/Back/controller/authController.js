@@ -85,8 +85,35 @@ const edit = async (req, res) => {
 	const { id } = req.params;
 	console.log(req.params);
 	const name = fristName + " " + lastName;
-	await User.updateOne({ _id: id }, { $set: { CI, email, username, name } });
-	res.json(["Usuario Actualizado"]);
+
+	const userFound = await User.findOne({ CI });
+	const userFoundEmail = await User.findOne({ email });
+	console.log(userFound);
+	console.log(userFoundEmail);
+
+	if (userFound || userFoundEmail) {
+		res.status(400).send(["Existe un usuario con esos datos"]);
+	} else {
+		await User.updateOne({ _id: id }, { $set: { CI, email, username, name } });
+		res.json(["Usuario Actualizado"]);
+	}
+};
+
+const changePass = async (req, res) => {
+	const { password, newPass } = req.body;
+	const { id } = req.params;
+	console.log(newPass);
+	const userFound = await User.findById({ _id: id });
+	if (!userFound) return res.status(400).json(["user not found"]);
+
+	const isMatch = await bcrypt.compare(password, userFound.password);
+	console.log(isMatch);
+	if (!isMatch) return res.status(400).json(["password incorrect"]);
+
+	const hashedPassw = await bcrypt.hash(newPass, 10);
+	console.log(hashedPassw);
+	await User.updateOne({ _id: id }, { $set: { password: hashedPassw } });
+	res.json(["password changed"]);
 };
 
 const verifyToken = async (req, res) => {
@@ -110,4 +137,12 @@ const verifyToken = async (req, res) => {
 	});
 };
 
-module.exports = { register, login, logout, verifyToken, profile, edit };
+module.exports = {
+	register,
+	login,
+	logout,
+	verifyToken,
+	profile,
+	edit,
+	changePass,
+};

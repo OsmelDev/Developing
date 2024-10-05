@@ -83,6 +83,36 @@ export async function handleUpdate({
 	return data;
 }
 
+export async function handleChangePass({ id, password, newPass }) {
+	const headers = new Headers();
+	headers.append("content-type", "application/json");
+
+	const body = `{
+    "password":"${password}",
+    "newPass":"${newPass}"
+  }`;
+
+	const init = {
+		method: "PUT",
+		credentials: "include",
+		headers,
+		body,
+	};
+
+	const response = await fetch(
+		`http://localhost:3129/profile/edit/pass/${id}`,
+		init,
+	);
+	const mediaType = response.headers.get("content-type");
+	let data;
+	if (mediaType.includes("json")) {
+		data = await response.json();
+	} else {
+		data = await response.text();
+	}
+	return data;
+}
+
 export async function handleLogin({ username, password }) {
 	const headers = new Headers();
 	headers.append("content-type", "application/json");

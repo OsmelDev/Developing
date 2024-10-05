@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../contexts/UserProvider.jsx";
-const ViewUserProfile = ({ setIsEdit }) => {
-	const { dataUser } = useAuth();
+const ViewUserProfile = () => {
+	const { dataUser, setIsEdit } = useAuth();
 
-	// console.log(dataUser);
 	return (
 		<main className="h-screen bg-gray-900 flex flex-col items-center gap-20">
 			<div className="bg-gray-900  m-0 flex items-center justify-center gap-32 text-white">
@@ -34,8 +33,15 @@ const ViewUserProfile = ({ setIsEdit }) => {
 				</div>
 			</div>
 			<div className="flex gap-30  w-1/2 justify-around text-white">
-				<Link to="/">Volver</Link>
-				<button onClick={() => setIsEdit(true)}>Editar Datos</button>
+				<Link className="border px-8 rounded-md hover:bg-gray-600" to="/">
+					Volver
+				</Link>
+				<button
+					className="border px-8 rounded-md hover:bg-gray-600"
+					onClick={() => setIsEdit(true)}
+				>
+					Editar Datos
+				</button>
 			</div>
 		</main>
 	);
