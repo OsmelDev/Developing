@@ -15,7 +15,7 @@ const FormRegister = () => {
 				<form
 					className="flex flex-col border border-gray-300 px-8 py-5 w-1/3 mt-4 
 					justify-center items-center gap-3 rounded-2xl bg-blend-darken 
-					hover:border-violet-400"
+					hover:border-violet-400 "
 					onSubmit={(e) => e.preventDefault()}
 				>
 					<h2 className="font-bold text-3xl ">Register</h2>
@@ -37,21 +37,21 @@ const FormRegister = () => {
 						type="text"
 						placeholder="username"
 						onChange={(e) => setUsername(e.target.value)}
-						className="outline-none rounded-sm w-9/12 p-1 text-sm text-gray-900"
+						className="outline-none rounded-sm w-9/12 p-1 text-sm text-gray-900 text-center"
 					/>
 					<label className="text-sm flex font-bold ">Password</label>
 					<input
 						type="password"
 						placeholder="password"
 						onChange={(e) => setPassword(e.target.value)}
-						className="outline-none rounded-sm w-9/12 p-1 text-sm text-gray-900"
+						className="outline-none rounded-sm w-9/12 p-1 text-sm text-gray-900 text-center"
 					/>
 					<label className="text-sm flex font-bold ">Repeat Password</label>
 					<input
 						type="password"
 						placeholder="repeat password"
 						onChange={(e) => setConfirmPass(e.target.value)}
-						className="outline-none rounded-sm w-9/12 p-1 text-sm text-gray-900"
+						className="outline-none rounded-sm w-9/12 p-1 text-sm text-gray-900 text-center"
 					/>
 					<span
 						className=" w-full h-7 text-green-400 flex justify-center

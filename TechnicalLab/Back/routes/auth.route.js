@@ -7,6 +7,7 @@ const {
 	logout,
 	verifyToken,
 	profile,
+	edit,
 } = require("../controller/authController.js");
 
 const router = express.Router();
@@ -16,4 +17,5 @@ router.post("/login", login);
 router.post("/logout", logout);
 router.get("/verify", verifyToken);
 router.get("/profile", authRequired, profile);
+router.put("/profile/edit/:id", edit);
 module.exports = router;

@@ -4,6 +4,7 @@ import {
 	handleRegister,
 	handleLogin,
 	handleLogout,
+	handleUpdate,
 } from "../hoocks/useFetch.js";
 import Cookie from "js-cookie";
 
@@ -21,6 +22,13 @@ export const UserProvider = ({ children }) => {
 	const navigation = useNavigate();
 	const [username, setUsername] = useState("");
 	const [password, setPassword] = useState("");
+
+	const [fristName, setFristName] = useState("");
+	const [lastName, setLastName] = useState("");
+	const [ci, setCi] = useState("");
+	const [email, setEmail] = useState("");
+	const [msgUpd, setMsgUpd] = useState("");
+
 	const [confirmPass, setConfirmPass] = useState("");
 	const [dataUser, setDataUser] = useState([]);
 	const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -33,35 +41,66 @@ export const UserProvider = ({ children }) => {
 	const [isRegister, setIsRegister] = useState(false);
 
 	async function Login() {
-		let userData = await handleLogin({ username, password });
-		try {
-			if (userData._id) {
-				setMsg("iniciando seccion");
-				setDataUser(userData);
-				setTimeout(() => {
-					setIsAuthenticated(true);
-					setUserId(userData._id);
-				}, 2000);
-			} else if (!userData._id) {
-				setErr(userData);
+		if (username === "" || password === "") {
+			setErr(["All field its required"]);
+		} else {
+			let userData = await handleLogin({ username, password });
+			try {
+				if (userData._id) {
+					setMsg("iniciando seccion");
+					setDataUser(userData);
+					setTimeout(() => {
+						setIsAuthenticated(true);
+						setUserId(userData._id);
+					}, 2000);
+				} else if (!userData._id) {
+					setErr(userData);
+				}
+			} catch (err) {
+				setErr(err);
 			}
-		} catch (err) {
-			setErr(err);
 		}
 	}
 
 	async function Register() {
-		if (password === confirmPass) {
-			let userData = await handleRegister(username, password);
-			if (userData._id) {
-				setMsg("usuario registrado");
-				setIsRegister(true);
-			} else {
-				setErr(userData);
-			}
+		if (username === "" || password === "" || confirmPass === "") {
+			setErr(["All field its required"]);
 		} else {
-			setErr("El password no coincide");
+			if (password.length >= 6) {
+				if (password === confirmPass) {
+					let userData = await handleRegister(username, password);
+					if (userData._id) {
+						setMsg("usuario registrado");
+						setIsRegister(true);
+						setUsername("");
+						setPassword("");
+					} else {
+						setErr(userData);
+					}
+				} else {
+					setErr("the pass do not match");
+					console.log(userData);
+				}
+			} else {
+				setErr(["La contrase;a debe tener al menos 6 caracteres"]);
+			}
 		}
+	}
+
+	async function update() {
+		let id = dataUser._id;
+		console.log(id);
+		let dataUpdate = await handleUpdate({
+			id,
+			fristName,
+			lastName,
+			ci,
+			email,
+			username,
+		});
+		if (!dataUpdate) console.log("no hay datos");
+
+		setMsgUpd(dataUpdate);
 	}
 
 	async function logout() {
@@ -77,10 +116,11 @@ export const UserProvider = ({ children }) => {
 			const timer = setTimeout(() => {
 				setErr([]);
 				setMsg([]);
+				setMsgUpd([]);
 			}, 5000);
 			return () => clearTimeout(timer);
 		}
-	}, [err, msg]);
+	}, [err, msg, msgUpd]);
 
 	useEffect(() => {
 		if (isAuthenticated) navigation("/Profile");
@@ -137,6 +177,16 @@ export const UserProvider = ({ children }) => {
 				userId,
 				car,
 				setCar,
+				fristName,
+				setFristName,
+				lastName,
+				setLastName,
+				ci,
+				setCi,
+				email,
+				setEmail,
+				update,
+				msgUpd,
 			}}
 		>
 			{children}

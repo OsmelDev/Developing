@@ -31,11 +31,11 @@ const Cart = () => {
 
 			<aside
 				className="fixed  bg-black h-full top-0 -right-96 w-52 
-				overflow-hidden transition-all duration-1000 ease-in-out py-16 px-8
-				 text-white flex flex-col text-center rounded-l-xl"
+				overflow-y-auto transition-all duration-1000 ease-in-out py-16 px-8
+				 text-white flex flex-col text-center rounded-l-xl border"
 				id={style.cart}
 			>
-				<ul className="grid grid-cols-1 gap-5">
+				<ul className="grid grid-cols-1 gap-5 relative">
 					{car.map((inCart) => (
 						<CartItem
 							key={inCart.name}
@@ -44,14 +44,14 @@ const Cart = () => {
 							quantity={inCart.quantity}
 						/>
 					))}
-				</ul>
-				<button
-					className="absolute text-white bottom-5 right-8 h-8 w-8 flex 
+					<button
+						className="ml-28 text-white bottom-5 right-8 h-8 w-8 flex 
 				items-center justify-center hover:scale-150 hover:text-red-700 cursor-pointer
 				cursor-pointer"
-				>
-					<LiaCartArrowDownSolid className="h-full w-full" />
-				</button>
+					>
+						<LiaCartArrowDownSolid className="h-full w-full" />
+					</button>
+				</ul>
 			</aside>
 		</>
 	);

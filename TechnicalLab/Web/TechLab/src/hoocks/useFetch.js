@@ -43,6 +43,46 @@ export async function handleRegister(username, password) {
 	return data;
 }
 
+export async function handleUpdate({
+	id,
+	fristName,
+	lastName,
+	username,
+	email,
+	ci,
+}) {
+	const headers = new Headers();
+	headers.append("content-type", "application/json");
+
+	const body = `{
+    "username":"${username}",
+    "fristName":"${fristName}",
+    "lastName":"${lastName}",
+    "email":"${email}",
+    "CI":"${ci}"
+  }`;
+
+	const init = {
+		method: "PUT",
+		credentials: "include",
+		headers,
+		body,
+	};
+
+	const response = await fetch(
+		`http://localhost:3129/profile/edit/${id}`,
+		init,
+	);
+	const mediaType = response.headers.get("content-type");
+	let data;
+	if (mediaType.includes("json")) {
+		data = await response.json();
+	} else {
+		data = await response.text();
+	}
+	return data;
+}
+
 export async function handleLogin({ username, password }) {
 	const headers = new Headers();
 	headers.append("content-type", "application/json");

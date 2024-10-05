@@ -8,6 +8,8 @@ import Profile from "./screens/Profile.jsx";
 import ProtectedRoute from "./ProtectedRoutes.jsx";
 import FormLogin from "./screens/components/FormLogin.jsx";
 import FormRegister from "./screens//components/FormRegister.jsx";
+import EditUser from "./screens//components/EditUser.jsx";
+import ViewUserProfile from "./screens//components/ViewUserProfile.jsx";
 import { UserProvider } from "./contexts/UserProvider.jsx";
 import { CartProvider } from "./contexts/CartProvider.jsx";
 
@@ -25,6 +27,8 @@ const App = () => {
 						<Route path="/Register" element={<FormRegister />} />
 						<Route element={<ProtectedRoute />}>
 							<Route path="/Profile" element={<Profile />} />
+							<Route path="/Edit" element={<EditUser />} />
+							<Route path="/UserProfile" element={<ViewUserProfile />} />
 						</Route>
 					</Routes>
 				</div>

@@ -13,7 +13,7 @@ const FormLogin = () => {
 			justify-center w-full h-screen bg-gray-900 text-white"
 			>
 				<form
-					className="flex flex-col border border-gray-300 p-12 w-1/3 
+					className="flex flex-col border border-gray-300 p-8 w-1/3 
 					justify-center items-center gap-4 rounded-2xl bg-blend-darken"
 					onSubmit={(e) => e.preventDefault()}
 				>

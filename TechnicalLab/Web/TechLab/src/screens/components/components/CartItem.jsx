@@ -13,7 +13,10 @@ export default function CartIten({ name, price, quantity }) {
         <small className="flex gap-1">
           Qty : <p className="font-bold">{quantity}</p>
         </small>
-        <button className=" h-5 w-5 flex items-center justify-center rounded-lg bg-black active:bg-gray-600">
+        <button
+          className=" h-5 w-5 flex items-center justify-center rounded-lg 
+        bg-black active:bg-gray-600"
+        >
           {" "}
           +{" "}
         </button>

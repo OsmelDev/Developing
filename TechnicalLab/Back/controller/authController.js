@@ -6,7 +6,7 @@ const { SECRET_JWT_KEY, SALT_ROUNDS } = require("../config.js");
 
 const register = async (req, res) => {
 	const { username, password } = req.body;
-
+	console.log(req.body);
 	try {
 		const userFound = await User.findOne({ username });
 
@@ -48,6 +48,9 @@ const login = async (req, res) => {
 
 		res.json({
 			_id: userFound._id,
+			name: userFound.name,
+			CI: userFound.CI,
+			email: userFound.email,
 			username: userFound.username,
 			createdAt: userFound.createdAt,
 			updatedAt: userFound.updatedAt,
@@ -67,12 +70,23 @@ const profile = async (req, res) => {
 	const userFound = await User.findById(req.user.id);
 	if (!userFound) return res.status(400).json({ message: "User not found" });
 	return res.json({
-		id: userFound._id,
-		username: userFound.username,
+		_id: userFound._id,
+		name: userFound.name,
+		CI: userFound.CI,
 		email: userFound.email,
-		createAt: userFound.createAt,
-		updateAt: userFound.updateAt,
+		username: userFound.username,
+		createdAt: userFound.createdAt,
+		updatedAt: userFound.updatedAt,
 	});
+};
+
+const edit = async (req, res) => {
+	const { username, email, CI, fristName, lastName } = req.body;
+	const { id } = req.params;
+	console.log(req.params);
+	const name = fristName + " " + lastName;
+	await User.updateOne({ _id: id }, { $set: { CI, email, username, name } });
+	res.json(["Usuario Actualizado"]);
 };
 
 const verifyToken = async (req, res) => {
@@ -86,6 +100,9 @@ const verifyToken = async (req, res) => {
 
 		res.json({
 			_id: userFound._id,
+			name: userFound.name,
+			CI: userFound.CI,
+			email: userFound.email,
 			username: userFound.username,
 			createdAt: userFound.createdAt,
 			updatedAt: userFound.updatedAt,
@@ -93,4 +110,4 @@ const verifyToken = async (req, res) => {
 	});
 };
 
-module.exports = { register, login, logout, verifyToken, profile };
+module.exports = { register, login, logout, verifyToken, profile, edit };
