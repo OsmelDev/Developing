@@ -1,7 +1,6 @@
 .homeContainer {
   max-width: 100%;
-  height: 500px;
-  /* border: 1px solid; */
+  height: 100vh;
   padding-left: 10%;
   padding-right: 15%;
   padding-top: 50px;
@@ -13,14 +12,11 @@
 .infoContainer {
   margin-left: 3%;
   width: 60%;
-  /* border: 1px solid; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .feed {
-  /* border: 1px solid; */
-  /* margin-left: px; */
   width: 10%;
   height: 200px;
   display: flex;
@@ -43,7 +39,6 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-  /* border: 1px solid; */
   align-items: flex-start;
 }
 
@@ -74,7 +69,7 @@
   flex-direction: row;
   align-items: center;
 }
-.title h1 p{
+.title h1 p {
   margin-left: 25px;
 }
 .line {
@@ -92,7 +87,7 @@
   width: 30px;
 }
 
-.img{
+.img {
   background: url(../assets/avatar.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -104,15 +99,14 @@
   width: 300px;
   animation: profile__animate 8s ease-in-out infinite 1ms;
 }
-/* Animacion del contenedor de la imagen */
-@keyframes profile__animate{
-  0%{
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
-  50%{
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60% ;
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
-  100%{
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40% ;
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }

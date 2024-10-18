@@ -1,12 +1,10 @@
 .About {
-  width: 100%;
-  height: 600px;
+  max-width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-content: center;
 }
-
-
 
 .headAbout {
   display: flex;
@@ -40,7 +38,7 @@
   padding: 0;
   margin: 0;
 }
- 
+
 .ulIcons {
   margin-top: 10px;
   height: 25px;
@@ -87,15 +85,15 @@
   justify-content: center;
   background-color: #0e0d0d;
   transition: 0.5s;
-  a{
-  text-decoration: none;
-  color: #b4acac;
+  a {
+    text-decoration: none;
+    color: #b4acac;
   }
 }
 .aboutMe button:hover {
   background-color: hsl(0, 4%, 57%);
   cursor: pointer;
-  a{
+  a {
     color: black;
   }
 }
