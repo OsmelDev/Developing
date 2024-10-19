@@ -1,5 +1,19 @@
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: rgb(78, 113, 113);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #f0f8ffa1;
+}
+p {
+  color: #f0f8ffa1;
+}
+
+span {
+  color: #f0f8ffa1;
+  font-size: 18px;
 }

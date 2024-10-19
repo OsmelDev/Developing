@@ -1,0 +1,10 @@
+.footer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 2, 2, 0.481);
+  display: flex;
+  justify-content: space-around;
+  color: aliceblue;
+}

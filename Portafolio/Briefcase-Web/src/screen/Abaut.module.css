@@ -1,9 +1,10 @@
 .About {
-  max-width: 100%;
+  max-width: 90%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
+  background-color: #191a1ac4;
 }
 
 .headAbout {
@@ -22,9 +23,11 @@
   display: flex;
   align-items: center;
   width: 100%;
+  max-width: 100%;
   height: 60%;
   padding-top: 50px;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 5rem;
 }
 .webImage {
   height: 300px;
@@ -58,17 +61,13 @@
 }
 
 .card b {
-  color: rgba(20, 18, 18, 0.718);
+  color: rgb(0, 0, 0);
   font-size: 20px;
   margin-top: 10px;
 }
-.card p {
-  color: #211e1e;
-  font-size: 12px;
-}
 
 .aboutMe {
-  width: 35%;
+  width: 50%;
   height: 300px;
   padding: 0;
   display: flex;
@@ -91,11 +90,10 @@
   }
 }
 .aboutMe button:hover {
-  background-color: hsl(0, 4%, 57%);
+  color: #f0f8ffa1;
+  background-color: #191a1ac4;
+  border: 1px solid #f0f8ffa1;
   cursor: pointer;
-  a {
-    color: black;
-  }
 }
 .docIcon {
   margin-left: 10px;

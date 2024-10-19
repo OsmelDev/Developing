@@ -4,15 +4,18 @@
   align-items: center;
   height: 100vh;
   justify-content: center;
+  width: 90%;
+  background-color: #191a1ac4;
 }
 
 .portofolio section {
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
   gap: 30px;
+  max-width: 100%;
+  width: 100%;
 }
 .content {
   width: 88%;
@@ -24,7 +27,7 @@
   margin: auto;
 }
 .cart {
-  width: 350px;
+  width: 30%;
   aspect-ratio: 1 / 0.7;
   border-radius: 20px;
   position: relative;

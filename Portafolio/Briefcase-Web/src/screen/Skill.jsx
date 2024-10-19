@@ -1,36 +1,9 @@
 import React from "react";
 import styles from "./Skill.module.css";
 import VerifiedRoundedIcon from "@mui/icons-material/VerifiedRounded";
+import { skills } from "../globalData/global";
 
 export const Skill = () => {
-  const skills = [
-    {
-      id: "1",
-      name: "HTML",
-      level: "Basic",
-    },
-    {
-      id: "2",
-      name: "JavasCrypt",
-      level: "Intermediate",
-    },
-    {
-      id: "3",
-      name: "CSS",
-      level: "Basic",
-    },
-    {
-      id: "4",
-      name: "React",
-      level: "Intermediate",
-    },
-    {
-      id: "5",
-      name: "GIT",
-      level: "Basic",
-    },
-  ];
-
   return (
     <div name="Skill" className={styles.skill}>
       <div className={styles.topic}>
