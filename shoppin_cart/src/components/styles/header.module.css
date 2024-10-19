@@ -68,7 +68,7 @@
   color: #7b7b7b;
   font-size: 10px;
   color: #999;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px 0 0 6px;
   position: relative;
@@ -151,10 +151,6 @@
 .languajeSelectorContainer {
   padding: 10px 15px;
 }
-.languajeSelectorContainer:hover {
-  border: 1px solid white;
-  
-}
 .languajeSelector {
   display: flex;
   gap: 5px;
@@ -166,28 +162,32 @@
     height: 10px;
   }
 }
-.languaje:hover{
- color: #e97a20;
+.languaje:hover {
+  color: blue;
 }
 
-
-.infoContainer{
+.infoContainer {
   height: 35px;
   padding: 10px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  p{
+
+  p {
     margin: 0;
   }
 }
-.infoContainer:hover{
-  border: 1px solid;
+.infoContainer p:hover {
+  color: blue;
+  cursor: pointer;
 }
-.infoContainer p:first-child{
+.infoContainer p:first-child {
   font-weight: 300;
   text-align: left;
   font-size: 13px;
   color: rgb(255, 255, 255);
+  &&:hover {
+    color: blue;
+    cursor: pointer;
+  }
 }

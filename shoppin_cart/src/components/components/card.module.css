@@ -23,5 +23,9 @@
     border: none;
     border-radius: 10px;
     justify-content: center;
+
+    &&:hover {
+      cursor: pointer;
+    }
   }
 }

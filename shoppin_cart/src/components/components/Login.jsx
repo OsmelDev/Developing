@@ -1,64 +1,102 @@
-import React,{useId, useState} from 'react'
-import style from './styles/login.module.css'
-import { useTranslation } from 'react-i18next';
+import React, { useId, useState } from "react";
+import style from "./styles/login.module.css";
+import { useTranslation } from "react-i18next";
+import { handleLoginP } from "../../hooks/fetch.js";
+import { BACKEND } from "../../constant/constant.jsx";
 
-const Login = ({user, setUser, password, setPassword, isLogin, setIsLogin}) => {
+const Login = ({
+	user,
+	setLoginData,
+	loginData,
+	setUser,
+	password,
+	setPassword,
+	isLogin,
+	setIsLogin,
+}) => {
+	const [isValid, setIsValid] = useState(false);
+	const [error, setError] = useState("");
+	const [msg, setMsg] = useState("");
+	const loginId = useId();
+	const { t, i18n } = useTranslation("global");
 
-const loginId=useId();
-const { t, i18n } = useTranslation('global');
-
-function handleSubmit(e){
-	e.preventDefault();
-}
-function handleLogin(){
-	let data = {
-		username: user,
-		password: password
+	function handleSubmit(e) {
+		e.preventDefault();
 	}
-	localStorage.setItem('user', JSON.stringify(data))
-	setIsLogin(true)
-	setUser('')
-}
-function handleLogout(){
-	setIsLogin(false)
-}
+
+	async function handleLoggin() {
+		let userData = await handleLoginP({ user, password });
+		if (typeof userData === "string") {
+			setError(userData);
+			setIsValid(false);
+			setIsLogin(false);
+			console.log(userData);
+		} else {
+			setLoginData(userData);
+			setMsg("secion iniciada");
+			setIsValid(true);
+			setIsLogin(true);
+			console.log(userData);
+		}
+		console.log(typeof userData);
+	}
+	console.log(loginData);
+	function handleLogout() {
+		setIsLogin(false);
+		setLoginData("");
+	}
 
 	return (
 		<div>
 			<div className={style.loginContainer}>
-			{
-				isLogin? 
-				<label onClick={()=>handleLogout()} className={style.loginout}>
-					<p>
-						{t('header.account.logout')}
-					</p>
-				</label> :
-				<label htmlFor={loginId} className={style.loginButton}>
-					<span>
-					  <p>
-					    {t('header.account.greeting')}	
-					  </p>
-					  <p>
-					    {t('header.account.login')}	
-				   	</p>
-       		</span>
-				</label>
-			}
-				<input type="checkbox" id={loginId} hidden/>
-				<form onSubmit={handleSubmit} className={style.formLogin}>
-				<div className={style.formLoginContainer}>
-					<label >User</label>
-				  <input type='text' placeholder='username' onChange={(event)=> setUser(event.target.value)}/>
-				  <label >Password</label>
-				  <input type="password" placeholder='password' onChange={(event)=> setPassword(event.target.value)}/>
-				</div>
-				<button type="submit" onClick={()=> handleLogin()}>
-					submit
-				</button>
+				{isLogin ? (
+					<label onClick={() => handleLogout()} className={style.loginout}>
+						<p>{t("header.account.logout")}</p>
+					</label>
+				) : (
+					<div className={style.login}>
+						<label htmlFor={loginId} className={style.loginButton}>
+							<span>
+								<p>{t("header.account.greeting")}</p>
+							</span>
+						</label>
+					</div>
+				)}
+			</div>
+
+			<input type="checkbox" id={loginId} hidden />
+
+			<div className={isLogin ? style.formLoginClose : style.formLogin}>
+				<form onSubmit={handleSubmit}>
+					<div className={style.formLoginContainer}>
+						<label>{t("header.account.user")}</label>
+						<input
+							type="text"
+							placeholder={t("header.account.placeholderUser")}
+							value={user}
+							onChange={(event) => setUser(event.target.value)}
+						/>
+						<label>{t("header.account.password")}</label>
+						<input
+							value={password}
+							type="password"
+							placeholder={t("header.account.placeholderPass")}
+							onChange={(event) => setPassword(event.target.value)}
+						/>
+					</div>
+					{isValid ? "" : <span className={style.error}>{error}</span>}
+
+					<button type="submit" onClick={() => handleLoggin()}>
+						{t("header.bottons.login")}
+					</button>
 				</form>
+
+				<label htmlFor={loginId} className={style.close}>
+					X
+				</label>
 			</div>
 		</div>
 	);
-}
+};
 
 export default Login;

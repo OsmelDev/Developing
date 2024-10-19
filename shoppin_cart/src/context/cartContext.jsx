@@ -1,29 +1,18 @@
-import { createContext, useState } from 'react';
-import { useCartReducer } from '../reducer/cartReducer';
+import { createContext, useState } from "react";
+import { useCartReducer } from "../reducer/cartReducer";
 
 export const CartContext = createContext();
 
 export function CartProvider({ children }) {
   const { state, addToCart, removeFromCart, clearCart, dispatch } =
     useCartReducer();
-    const [user, setUser]=useState('');
-
-  function handleRegister(){
-  let data = {
-    username: user,
-    password: password
-  }
-  localStorage.setItem('user', JSON.stringify(data))
-  setIsLogin(true)
-  setUser('')
-}
-  function handleLogin(){
-
-}
-
+  const [user, setUser] = useState("");
+  const [loginData, setLoginData] = useState("");
   return (
     <CartContext.Provider
       value={{
+        loginData,
+        setLoginData,
         user,
         setUser,
         state,
@@ -31,7 +20,6 @@ export function CartProvider({ children }) {
         removeFromCart,
         clearCart,
         dispatch,
-        handleRegister,
       }}
     >
       {children}

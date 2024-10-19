@@ -4,6 +4,12 @@
     "account": {
       "greeting": "Hello, sign in",
       "login": "Acconunt & List",
+      "register": "Register",
+      "placeholderUser": "Username",
+      "placeholderPass": "Password",
+      "placeholdercConfirmPass": "Confirm Password",
+      "user": "User",
+      "password": "password",
       "logout": "Log Out"
     },
     "orders": {
@@ -18,6 +24,19 @@
         "men's": "Men's clothing",
         "women's": "Women's clothing"
       }
+    },
+    "mensajes": {
+      "registerError": {
+        "sinCoincidencia": "The password does not match",
+        "longError": "The password must contain at least 6 characters"
+      },
+      "registerConfirmed": "User registered successfully",
+      "loginError": "Incorrect username or password",
+      "loginConfirmed": "Section Started Successfully"
+    },
+    "bottons": {
+      "register": "register",
+      "login": "login"
     }
   }
 }

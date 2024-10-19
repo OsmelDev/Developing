@@ -4,6 +4,12 @@
     "account": {
       "greeting": "Hola, inicia sesión",
       "login": "Cuenta y lista",
+      "register": "Registro",
+      "placeholderUser": "Nombre de Usuario",
+      "placeholderPass": "Contraseña",
+      "placeholdercConfirmPass": "Confirmar Contraseña",
+      "user": "usuario",
+      "password": "contraseña",
       "logout": "Cerrar"
     },
     "orders": {
@@ -18,6 +24,19 @@
         "men's": "Ropa de Hombre",
         "women's": "Ropa de Mujer"
       }
+    },
+    "mensajes": {
+      "registerError": {
+        "sinCoincidencia": "La contraseña no coincide",
+        "longError": "La contraseña debe contener al menos 6 caracteres"
+      },
+      "registerConfirmed": "Usuario registrado exitosamente",
+      "loginError": "Nombre de usuario o contraseña incorrectos",
+      "loginConfirmed": "Sección iniciada con éxito"
+    },
+    "bottons": {
+      "register": "registro",
+      "login": "acceso"
     }
   }
 }

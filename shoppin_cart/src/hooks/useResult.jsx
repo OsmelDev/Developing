@@ -5,8 +5,8 @@ import { useFilter } from "./useFilter";
 import { CartContext } from "../context/cartContext";
 
 export function useResult() {
-  const { addToCart, removeFromCart, state } = useContext(CartContext);
-
+  const { addToCart, removeFromCart, state, user, loginData } =
+    useContext(CartContext);
 
   const { filterProducts, filterProductsLocal } = useFilter();
   const checkProductInCart = (localProduct) => {
@@ -14,11 +14,11 @@ export function useResult() {
   };
 
   const localProducts = filterProductsLocal();
-  
+
   function getLocalResult() {
     return localProducts.map((localproduct) => {
       const isProductInCart = checkProductInCart(localproduct);
-      
+
       return (
         <Card
           localproduct={localproduct}
@@ -29,6 +29,7 @@ export function useResult() {
           addToCart={addToCart}
           removeFromCart={removeFromCart}
           isProductInCart={isProductInCart}
+          user={loginData.username}
         />
       );
     });
@@ -48,6 +49,7 @@ export function useResult() {
           addToCart={addToCart}
           removeFromCart={removeFromCart}
           isProductInCart={isProductInCart}
+          user={loginData.username}
         />
       );
     });
