@@ -17,6 +17,12 @@ export const projects = [
     description:
       "sitio que realize en forma de practica, simulando una tienda online",
   },
+  {
+    name: "Calculadora",
+    image: "/ChatIo.png",
+    description:
+      "Projecto realizado con el fin de mejorar y poner en practica mis conocimientos",
+  },
 ];
 
 export const skills = [

@@ -1,19 +1,70 @@
+:root {
+  --fondo: black;
+  --fondo-screens: #191a1ac4;
+  --nav: rgba(0, 2, 2, 0.481);
+  --text: #ccc8c8;
+  --text-secundary: rgb(15, 15, 15);
+  --border: gray;
+  --border-thump: rgba(128, 128, 128, 0.308);
+  --drop-shadow-color: rgb(221, 215, 215);
+  --text-hover: rgb(25, 115, 199);
+  --fondo-check: rgba(0, 2, 2, 0);
+  --fondo-slider: white;
+  --card: rgb(19, 18, 18);
+  --botton: #0e0d0d;
+}
+
 body {
+  min-height: 100vh;
+  overflow-y: auto;
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgb(78, 113, 113);
+  background-color: var(--fondo);
+  transition: 1000ms;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--fondo-screens);
+  border: 1px solid var(--border-thump);
+  border-radius: 2px;
+}
+.container::-webkit-scrollbar-track {
+  background-color: var(--fondo);
+}
+#root {
+  min-height: 100%;
 }
 h1,
 h2,
 h3,
 h4 {
-  color: #f0f8ffa1;
+  color: var(--text);
 }
 p {
-  color: #f0f8ffa1;
+  color: var(--text);
 }
 
 span {
   color: #f0f8ffa1;
   font-size: 18px;
+  color: var(--text);
+}
+
+[data-theme="claro"] {
+  --fondo: rgb(255, 255, 255);
+  --fondo-screens: #b6b9b9c4;
+  --text: #242323;
+  --nav: rgba(166, 170, 170, 0.481);
+  --text-secundary: rgb(250, 248, 248);
+  --border: rgb(128, 125, 125);
+  --border-thump: rgba(34, 34, 34, 0.363);
+  --drop-shadow-color: black;
+  --text-hover: rgb(25, 115, 199);
+  --fondo-check: rgba(0, 2, 2, 0);
+  --fondo-slider: black;
+  --card: rgb(202, 197, 197);
+  --botton: #706d6da4;
 }

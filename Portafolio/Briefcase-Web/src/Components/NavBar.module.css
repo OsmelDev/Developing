@@ -5,10 +5,15 @@
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(0, 2, 2, 0.481);
+  background-color: var(--nav);
 }
-.navBarContainer p{
-  color: rgb(200, 196, 189);
+.navBarContainer p {
+  color: var(--text);
+}
+.containerMenu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 .linksContainer {
   display: flex;
@@ -18,9 +23,9 @@
   margin-left: 25px;
 }
 .navLink {
-  color: #f1f1f1;
+  color: var(--text);
 }
 .navLink:hover {
-  color: gray;
+  color: var(--text-hover);
   cursor: pointer;
 }

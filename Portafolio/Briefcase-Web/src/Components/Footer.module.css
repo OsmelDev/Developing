@@ -3,8 +3,8 @@
   height: 50px;
   position: fixed;
   bottom: 0;
-  background-color: rgba(0, 2, 2, 0.481);
+  background-color: var(--nav);
   display: flex;
   justify-content: space-around;
-  color: aliceblue;
+  color: var(--text);
 }

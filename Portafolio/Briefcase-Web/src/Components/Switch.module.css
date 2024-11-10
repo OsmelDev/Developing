@@ -1,0 +1,32 @@
+.switch {
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  align-items: center;
+  transition: 1000ms;
+}
+.toggle {
+  background-color: var(--fondo-check);
+  width: 2rem;
+  height: 0.8rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  padding: 1px 0;
+}
+.slider {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 1.5rem;
+  background-color: var(--fondo-slider);
+  padding: 0;
+  margin: 4px;
+  transform: translateX(0.8rem);
+  transition: 500ms;
+}
+.checkbox_switch:checked + .slider {
+  transform: translateX(0);
+  background-color: var(--fondo-slider);
+}
